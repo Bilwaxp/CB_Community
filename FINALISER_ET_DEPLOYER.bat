@@ -54,7 +54,7 @@ echo.
 
 REM Push
 echo Poussee vers GitHub...
-git push https://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@github.com/Bilwaxp/CB_Community.git main
+git push origin main
 if errorlevel 1 (
     echo [ERREUR] Echec du push!
     pause

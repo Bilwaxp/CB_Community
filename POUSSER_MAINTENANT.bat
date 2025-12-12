@@ -83,8 +83,13 @@ echo ========================================
 echo.
 echo Poussee du code vers GitHub...
 echo.
+echo Quand Git demande vos identifiants:
+echo   Username: Bilwaxp
+echo   Password: (utilisez votre token GitHub)
+echo.
+pause
 
-git push https://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@github.com/Bilwaxp/CB_Community.git main
+git push origin main
 
 if errorlevel 1 (
     echo.
