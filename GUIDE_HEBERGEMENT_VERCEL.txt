@@ -1,0 +1,183 @@
+╔════════════════════════════════════════════════════════════════╗
+║   GUIDE - HÉBERGEMENT SUR VERCEL                              ║
+╚════════════════════════════════════════════════════════════════╝
+
+✅ DÉPLOIEMENT SUR VERCEL (RECOMMANDÉ)
+═══════════════════════════════════════════════════════════════
+
+Vercel est la plateforme recommandée pour Next.js.
+Elle offre un déploiement automatique depuis GitHub.
+
+═══════════════════════════════════════════════════════════════
+📋 ÉTAPE 1: CRÉER UN COMPTE VERCEL
+═══════════════════════════════════════════════════════════════
+
+1. ALLEZ SUR: https://vercel.com
+
+2. CLIQUez SUR "Sign Up"
+
+3. CONNECTEZ VOTRE COMPTE GITHUB:
+   → Cliquez sur "Continue with GitHub"
+   → Autorisez Vercel à accéder à vos dépôts
+   → Vercel aura accès à votre dépôt CB_Community
+
+═══════════════════════════════════════════════════════════════
+🚀 ÉTAPE 2: DÉPLOYER LE PROJET
+═══════════════════════════════════════════════════════════════
+
+1. CLIQUez SUR "Add New Project"
+
+2. SÉLECTIONNEZ VOTRE DÉPÔT:
+   → Cherchez "Bilwaxp/CB_Community"
+   → Cliquez sur "Import"
+
+3. CONFIGUREZ LE PROJET:
+   → Framework Preset: Next.js (détecté automatiquement)
+   → Root Directory: ./
+   → Build Command: npm run build (par défaut)
+   → Output Directory: .next (par défaut)
+   → Install Command: npm install (par défaut)
+
+4. CLIQUez SUR "Deploy"
+   → Vercel va commencer le déploiement
+   → Cela peut prendre 2-5 minutes
+
+═══════════════════════════════════════════════════════════════
+⚙️ ÉTAPE 3: CONFIGURER LES VARIABLES D'ENVIRONNEMENT
+═══════════════════════════════════════════════════════════════
+
+IMPORTANT: Vous devez configurer les variables d'environnement!
+
+1. APRÈS LE DÉPLOIEMENT, ALLEZ DANS:
+   → Settings > Environment Variables
+
+2. AJOUTEZ TOUTES LES VARIABLES DE VOTRE .env:
+   → DATABASE_URL=file:./prisma/dev.db
+   → NEXTAUTH_SECRET=(votre secret)
+   → NEXTAUTH_URL=https://votre-site.vercel.app
+   → GOOGLE_CLIENT_ID=(si configuré)
+   → GOOGLE_CLIENT_SECRET=(si configuré)
+   → STRIPE_SECRET_KEY=(si configuré)
+   → SMTP_HOST, SMTP_PORT, etc. (si configuré)
+
+3. POUR CHAQUE VARIABLE:
+   → Cliquez sur "Add"
+   → Entrez le nom (ex: DATABASE_URL)
+   → Entrez la valeur
+   → Sélectionnez les environnements (Production, Preview, Development)
+   → Cliquez sur "Save"
+
+4. REDÉPLOYEZ:
+   → Allez dans Deployments
+   → Cliquez sur les trois points (...) du dernier déploiement
+   → Cliquez sur "Redeploy"
+
+═══════════════════════════════════════════════════════════════
+🗄️ ÉTAPE 4: CONFIGURER LA BASE DE DONNÉES
+═══════════════════════════════════════════════════════════════
+
+SQLite ne fonctionne pas bien sur Vercel (fichier système).
+Vous devez utiliser une base de données distante:
+
+OPTION 1: SUPABASE (GRATUIT)
+────────────────────────────
+1. Allez sur: https://supabase.com
+2. Créez un compte gratuit
+3. Créez un nouveau projet
+4. Copiez l'URL de connexion PostgreSQL
+5. Dans Vercel, ajoutez:
+   DATABASE_URL=postgresql://...
+
+OPTION 2: PLANETSCALE (GRATUIT)
+────────────────────────────────
+1. Allez sur: https://planetscale.com
+2. Créez un compte gratuit
+3. Créez une base de données
+4. Copiez l'URL de connexion
+5. Dans Vercel, ajoutez:
+   DATABASE_URL=mysql://...
+
+OPTION 3: NEON (GRATUIT)
+─────────────────────────
+1. Allez sur: https://neon.tech
+2. Créez un compte gratuit
+3. Créez une base de données PostgreSQL
+4. Copiez l'URL de connexion
+5. Dans Vercel, ajoutez:
+   DATABASE_URL=postgresql://...
+
+APRÈS AVOIR CONFIGURÉ LA BASE DE DONNÉES:
+→ Mettez à jour DATABASE_URL dans Vercel
+→ Redéployez le projet
+→ Les migrations Prisma s'exécuteront automatiquement
+
+═══════════════════════════════════════════════════════════════
+🔧 ÉTAPE 5: MIGRATIONS PRISMA
+═══════════════════════════════════════════════════════════════
+
+Pour que Prisma fonctionne sur Vercel:
+
+1. MODIFIEZ package.json:
+   Ajoutez dans "scripts":
+   "postinstall": "prisma generate"
+
+2. CRÉEZ UN FICHIER vercel.json:
+   {
+     "buildCommand": "npm run build",
+     "installCommand": "npm install",
+     "framework": "nextjs"
+   }
+
+3. PUSHEZ LES CHANGEMENTS:
+   git add .
+   git commit -m "Configure for Vercel"
+   git push origin main
+
+4. VERCEL REDÉPLOIERA AUTOMATIQUEMENT
+
+═══════════════════════════════════════════════════════════════
+✅ VOTRE SITE EST EN LIGNE!
+═══════════════════════════════════════════════════════════════
+
+Après le déploiement, Vercel vous donnera une URL:
+→ https://cb-community-xxxxx.vercel.app
+
+Vous pouvez:
+→ Partager cette URL avec vos utilisateurs
+→ Configurer un domaine personnalisé
+→ Voir les logs et les statistiques
+
+═══════════════════════════════════════════════════════════════
+🔄 MISE À JOUR AUTOMATIQUE
+═══════════════════════════════════════════════════════════════
+
+Vercel redéploie automatiquement quand vous:
+→ Poussez du code sur GitHub
+→ Faites un commit sur la branche main
+→ Créez une pull request
+
+C'est automatique! Pas besoin de redéployer manuellement.
+
+═══════════════════════════════════════════════════════════════
+📋 CHECKLIST DE DÉPLOIEMENT
+═══════════════════════════════════════════════════════════════
+
+□ Compte Vercel créé
+□ Dépôt GitHub connecté
+□ Projet déployé
+□ Variables d'environnement configurées
+□ Base de données distante configurée
+□ Migrations Prisma exécutées
+□ Site accessible en ligne
+□ Domaine personnalisé configuré (optionnel)
+
+═══════════════════════════════════════════════════════════════
+✅ TOUT EST PRÊT!
+═══════════════════════════════════════════════════════════════
+
+Exécutez: HEBERGER_EN_LIGNE.bat pour commencer!
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+
