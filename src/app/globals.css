@@ -1,0 +1,430 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==================== ROOT VARIABLES ==================== */
+:root {
+  --background: #07051A;
+  --neon-violet: #7B4BFF;
+  --neon-cyan: #4BD8FF;
+  --neon-green: #00FFA3;
+  --text-primary: #FFFFFF;
+  --text-secondary: #BFC9D9;
+  --glow-violet: rgba(123, 75, 255, 0.18);
+  --surface-dark: #0D0B24;
+  --surface-light: #14122E;
+}
+
+/* ==================== BASE STYLES ==================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ==================== CUSTOM SCROLLBAR ==================== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--neon-violet), var(--neon-cyan));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-violet);
+}
+
+/* ==================== TEXT SELECTION ==================== */
+::selection {
+  background: var(--neon-violet);
+  color: white;
+}
+
+/* ==================== GLASSMORPHISM ==================== */
+@layer components {
+  .glass {
+    background: rgba(13, 11, 36, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(123, 75, 255, 0.2);
+  }
+
+  .glass-card {
+    background: linear-gradient(
+      135deg,
+      rgba(123, 75, 255, 0.08) 0%,
+      rgba(75, 216, 255, 0.04) 50%,
+      rgba(0, 255, 163, 0.02) 100%
+    );
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(123, 75, 255, 0.15);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+  }
+
+  .glass-card:hover {
+    border-color: rgba(123, 75, 255, 0.4);
+    box-shadow: 0 0 30px rgba(123, 75, 255, 0.2);
+    transform: translateY(-2px);
+  }
+
+  /* ==================== NEON BUTTONS ==================== */
+  .btn-neon {
+    position: relative;
+    padding: 12px 32px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    background: linear-gradient(135deg, var(--neon-violet), #5a3bcc);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(123, 75, 255, 0.4);
+  }
+
+  .btn-neon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    transition: left 0.5s ease;
+  }
+
+  .btn-neon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 40px rgba(123, 75, 255, 0.6);
+  }
+
+  .btn-neon:hover::before {
+    left: 100%;
+  }
+
+  .btn-neon-cyan {
+    background: linear-gradient(135deg, var(--neon-cyan), #2bb3d6);
+    box-shadow: 0 0 20px rgba(75, 216, 255, 0.4);
+  }
+
+  .btn-neon-cyan:hover {
+    box-shadow: 0 0 40px rgba(75, 216, 255, 0.6);
+  }
+
+  .btn-neon-green {
+    background: linear-gradient(135deg, var(--neon-green), #00cc82);
+    box-shadow: 0 0 20px rgba(0, 255, 163, 0.4);
+  }
+
+  .btn-neon-green:hover {
+    box-shadow: 0 0 40px rgba(0, 255, 163, 0.6);
+  }
+
+  .btn-outline {
+    padding: 12px 32px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--neon-violet);
+    background: transparent;
+    border: 2px solid var(--neon-violet);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline:hover {
+    background: rgba(123, 75, 255, 0.1);
+    box-shadow: 0 0 20px rgba(123, 75, 255, 0.3);
+    transform: translateY(-2px);
+  }
+
+  /* ==================== NEON TEXT ==================== */
+  .text-glow {
+    text-shadow: 0 0 10px var(--neon-violet),
+                 0 0 20px var(--neon-violet),
+                 0 0 40px rgba(123, 75, 255, 0.5);
+  }
+
+  .text-glow-cyan {
+    text-shadow: 0 0 10px var(--neon-cyan),
+                 0 0 20px var(--neon-cyan),
+                 0 0 40px rgba(75, 216, 255, 0.5);
+  }
+
+  .text-glow-green {
+    text-shadow: 0 0 10px var(--neon-green),
+                 0 0 20px var(--neon-green),
+                 0 0 40px rgba(0, 255, 163, 0.5);
+  }
+
+  /* ==================== GRADIENT TEXT ==================== */
+  .gradient-text {
+    background: linear-gradient(135deg, var(--neon-violet), var(--neon-cyan), var(--neon-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ==================== INPUT STYLES ==================== */
+  .input-neon {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 16px;
+    color: var(--text-primary);
+    background: var(--surface-dark);
+    border: 1px solid rgba(123, 75, 255, 0.2);
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  .input-neon::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.6;
+  }
+
+  .input-neon:focus {
+    border-color: var(--neon-violet);
+    box-shadow: 0 0 20px rgba(123, 75, 255, 0.2);
+  }
+
+  /* ==================== CARDS ==================== */
+  .card-neon {
+    background: var(--surface-dark);
+    border: 1px solid rgba(123, 75, 255, 0.15);
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.3s ease;
+  }
+
+  .card-neon:hover {
+    border-color: rgba(123, 75, 255, 0.4);
+    box-shadow: 0 0 30px rgba(123, 75, 255, 0.15);
+    transform: translateY(-4px);
+  }
+
+  /* ==================== BADGES ==================== */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 999px;
+  }
+
+  .badge-violet {
+    background: rgba(123, 75, 255, 0.2);
+    color: var(--neon-violet);
+    border: 1px solid rgba(123, 75, 255, 0.3);
+  }
+
+  .badge-cyan {
+    background: rgba(75, 216, 255, 0.2);
+    color: var(--neon-cyan);
+    border: 1px solid rgba(75, 216, 255, 0.3);
+  }
+
+  .badge-green {
+    background: rgba(0, 255, 163, 0.2);
+    color: var(--neon-green);
+    border: 1px solid rgba(0, 255, 163, 0.3);
+  }
+
+  /* ==================== PROGRESS BAR ==================== */
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background: var(--surface-dark);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--neon-violet), var(--neon-cyan));
+    border-radius: 999px;
+    transition: width 0.5s ease;
+  }
+}
+
+/* ==================== ANIMATED BACKGROUND ==================== */
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.animated-bg::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(123, 75, 255, 0.08) 0%,
+    transparent 50%
+  );
+  animation: rotate 30s linear infinite;
+}
+
+.animated-bg::after {
+  content: '';
+  position: absolute;
+  top: 30%;
+  right: -10%;
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(75, 216, 255, 0.05) 0%,
+    transparent 50%
+  );
+  animation: pulse 8s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+/* ==================== GRID BACKGROUND ==================== */
+.grid-bg {
+  background-image: 
+    linear-gradient(rgba(123, 75, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(123, 75, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* ==================== LOADING ANIMATION ==================== */
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--surface-light);
+  border-top-color: var(--neon-violet);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==================== VIDEO PLAYER ==================== */
+.video-player-container {
+  position: relative;
+  width: 100%;
+  background: black;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.video-player-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border: 1px solid rgba(123, 75, 255, 0.3);
+  border-radius: 12px;
+}
+
+/* ==================== TOOLTIP ==================== */
+.tooltip {
+  position: relative;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  background: var(--surface-dark);
+  color: var(--text-primary);
+  font-size: 12px;
+  white-space: nowrap;
+  border-radius: 6px;
+  border: 1px solid rgba(123, 75, 255, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  z-index: 1000;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-8px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

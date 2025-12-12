@@ -1,0 +1,140 @@
+╔════════════════════════════════════════════════════════════════╗
+║   GUIDE - MÉTHODES DE PAIEMENT POUR PLAN VIP                  ║
+╚════════════════════════════════════════════════════════════════╝
+
+✅ TOUTES LES MÉTHODES DE PAIEMENT SONT DISPONIBLES!
+═══════════════════════════════════════════════════════════════
+
+Les utilisateurs peuvent maintenant payer pour le plan VIP avec:
+✅ Carte de crédit/débit (Stripe)
+✅ PayPal
+✅ Moncash
+✅ Natcash
+✅ Zelle
+✅ Cryptomonnaie (USDT, Bitcoin)
+
+═══════════════════════════════════════════════════════════════
+💳 COMMENT ÇA FONCTIONNE
+═══════════════════════════════════════════════════════════════
+
+1. L'utilisateur va sur: http://localhost:3000/dashboard/billing
+2. Il clique sur "Choisir ce plan" pour VIP
+3. Une fenêtre s'ouvre avec toutes les méthodes de paiement
+4. Il choisit sa méthode préférée
+5. Il est redirigé vers la page de paiement correspondante
+
+═══════════════════════════════════════════════════════════════
+🔧 MÉTHODES DE PAIEMENT
+═══════════════════════════════════════════════════════════════
+
+1. CARTE DE CRÉDIT/DÉBIT (STRIPE)
+─────────────────────────────────
+✅ Paiement instantané et sécurisé
+✅ Accepte Visa, Mastercard, American Express
+✅ Traitement automatique
+✅ Activation immédiate du plan
+
+2. PAYPAL
+─────────
+✅ Email PayPal: paypal@cbcommunity.com
+✅ L'utilisateur envoie le montant
+✅ Confirme le paiement
+✅ Vérification manuelle par l'admin
+✅ Activation après vérification
+
+3. MONCASH
+──────────
+✅ L'utilisateur entre son numéro Moncash
+✅ Génération d'un QR Code
+✅ Paiement via l'application Moncash
+✅ Vérification manuelle par l'admin
+
+4. NATCASH
+──────────
+✅ L'utilisateur entre son numéro Natcash
+✅ Instructions de paiement
+✅ Vérification manuelle par l'admin
+
+5. ZELLE
+─────────
+✅ Email Zelle: zelle@cbcommunity.com
+✅ L'utilisateur envoie le montant
+✅ Confirme le paiement
+✅ Vérification manuelle par l'admin
+
+6. CRYPTOMONNAIE
+────────────────
+✅ Support USDT et Bitcoin
+✅ Adresse du portefeuille affichée
+✅ L'utilisateur envoie la cryptomonnaie
+✅ Entrée du hash de transaction
+✅ Vérification manuelle par l'admin
+
+═══════════════════════════════════════════════════════════════
+⚙️ CONFIGURATION ADMIN
+═══════════════════════════════════════════════════════════════
+
+POUR LES PAIEMENTS MANUELS:
+────────────────────────────
+1. Allez sur: http://localhost:3000/admin/payments
+2. Voir les paiements en attente (status: PENDING)
+3. Vérifier le paiement (vérifier PayPal, Zelle, Moncash, etc.)
+4. Approuver le paiement
+5. Le plan de l'utilisateur sera activé automatiquement
+
+POUR STRIPE:
+────────────
+✅ Configuration automatique via webhook
+✅ Pas d'intervention manuelle nécessaire
+✅ Activation immédiate après paiement
+
+═══════════════════════════════════════════════════════════════
+📋 WORKFLOW POUR L'UTILISATEUR
+═══════════════════════════════════════════════════════════════
+
+1. Aller sur /dashboard/billing
+2. Cliquer sur "Choisir ce plan" pour VIP
+3. Sélectionner la méthode de paiement
+4. Suivre les instructions selon la méthode:
+   - Stripe: Remplir les informations de carte
+   - PayPal: Envoyer à l'email indiqué
+   - Moncash: Scanner le QR Code
+   - Natcash: Suivre les instructions
+   - Zelle: Envoyer à l'email indiqué
+   - Crypto: Envoyer à l'adresse indiquée
+5. Confirmer le paiement
+6. Attendre la vérification (pour méthodes manuelles)
+7. Le plan est activé!
+
+═══════════════════════════════════════════════════════════════
+🔐 SÉCURITÉ
+═══════════════════════════════════════════════════════════════
+
+✅ Stripe: Paiement sécurisé, données cryptées
+✅ PayPal: Paiement sécurisé via PayPal
+✅ Moncash/Natcash: Paiement via application officielle
+✅ Zelle: Paiement bancaire sécurisé
+✅ Crypto: Transactions blockchain vérifiables
+
+═══════════════════════════════════════════════════════════════
+📝 NOTES IMPORTANTES
+═══════════════════════════════════════════════════════════════
+
+1. Les paiements Stripe sont automatiques
+2. Les autres méthodes nécessitent une vérification manuelle
+3. L'admin doit vérifier et approuver les paiements manuels
+4. Les adresses email/portefeuilles peuvent être configurées
+5. Les prix sont en USD par défaut
+
+═══════════════════════════════════════════════════════════════
+✅ TOUT EST PRÊT!
+═══════════════════════════════════════════════════════════════
+
+Toutes les méthodes de paiement sont fonctionnelles.
+Les utilisateurs peuvent choisir leur méthode préférée
+pour s'abonner au plan VIP.
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

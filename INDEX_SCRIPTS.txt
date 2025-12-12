@@ -1,0 +1,139 @@
+╔════════════════════════════════════════════════════════════════╗
+║   INDEX DES SCRIPTS - CB_COMMUNITY                            ║
+╚════════════════════════════════════════════════════════════════╝
+
+🎯 SCRIPTS PRINCIPAUX (COMMENCEZ ICI)
+═══════════════════════════════════════════════════════════════
+
+✅ COMMENCER_ICI.bat
+   → Menu principal - Point d'entrée pour tout
+
+✅ FINALISER_TOUT.bat
+   → Configure tout le site (première fois)
+
+✅ VERIFIER_TOUT.bat
+   → Vérifie que tout est correctement configuré
+
+✅ DEMARRER_MAINTENANT.bat
+   → Démarre le serveur de production
+
+═══════════════════════════════════════════════════════════════
+🔐 AUTHENTIFICATION
+═══════════════════════════════════════════════════════════════
+
+✅ GOOGLE_MAINTENANT.bat
+   → Menu pour configurer Google OAuth
+
+✅ CONFIGURER_GOOGLE_RAPIDE.bat
+   → Configuration rapide Google OAuth
+
+✅ CONFIGURER_GOOGLE_ETAPE_PAR_ETAPE.bat
+   → Guide étape par étape pour Google OAuth
+
+✅ VERIFIER_GOOGLE.bat
+   → Vérifie la configuration Google OAuth
+
+✅ CREER_ADMIN.bat
+   → Crée un compte administrateur
+
+✅ CREER_ADMIN_FINAL.bat
+   → Crée un admin spécifique
+
+✅ ACTIVER_SANS_EMAIL.bat
+   → Active un compte utilisateur sans email
+
+✅ GERE_UTILISATEURS.bat
+   → Gestion des utilisateurs (menu)
+
+═══════════════════════════════════════════════════════════════
+💾 BASE DE DONNEES
+═══════════════════════════════════════════════════════════════
+
+✅ REPARER_DB.bat
+   → Répare les problèmes de base de données
+
+✅ OUVRIR_BD.bat
+   → Ouvre Prisma Studio (interface graphique)
+
+✅ CORRIGER_ERREURS_FINAL.bat
+   → Corrige les erreurs courantes
+
+═══════════════════════════════════════════════════════════════
+📧 EMAIL
+═══════════════════════════════════════════════════════════════
+
+✅ RESOUDRE_EMAIL.bat
+   → Configure l'envoi d'emails SMTP
+
+═══════════════════════════════════════════════════════════════
+🔍 DIAGNOSTIC
+═══════════════════════════════════════════════════════════════
+
+✅ DIAGNOSTIC_ERREUR.bat
+   → Diagnostique les erreurs du système
+
+✅ VERIFIER_TOUT.bat
+   → Vérification complète du système
+
+✅ VERIFIER_CONFIG.bat
+   → Vérifie la configuration avant déploiement
+
+═══════════════════════════════════════════════════════════════
+🌐 RESEAU
+═══════════════════════════════════════════════════════════════
+
+✅ TROUVER_IP.bat
+   → Trouve votre adresse IP locale
+
+✅ CONFIGURER_FIREWALL.bat
+   → Configure le pare-feu Windows pour le port 3000
+
+═══════════════════════════════════════════════════════════════
+🔧 UTILITAIRES
+═══════════════════════════════════════════════════════════════
+
+✅ GENERER_SECRET.bat
+   → Génère un NEXTAUTH_SECRET sécurisé
+
+✅ HEBERGER_FINAL.bat
+   → Script complet d'hébergement production
+
+✅ TESTER_SITE.bat
+   → Démarre en mode développement (test)
+
+═══════════════════════════════════════════════════════════════
+📚 GUIDES
+═══════════════════════════════════════════════════════════════
+
+✅ GUIDE_DEMARRAGE_RAPIDE.txt
+   → Guide de démarrage rapide
+
+✅ GUIDE_HAITIEN.txt
+   → Guide en créole haïtien
+
+✅ RESUME_FINAL.txt
+   → Résumé final de la configuration
+
+✅ INSTRUCTIONS_GOOGLE_SIMPLE.txt
+   → Instructions simples pour Google OAuth
+
+✅ GUIDE_GOOGLE_VISUEL.txt
+   → Guide détaillé pour Google OAuth
+
+✅ README.md
+   → Documentation complète du projet
+
+✅ GUIDE_HEBERGEMENT.md
+   → Guide complet d'hébergement
+
+═══════════════════════════════════════════════════════════════
+⚠️ SCRIPTS OBSOLETES (IGNOREZ)
+═══════════════════════════════════════════════════════════════
+
+Ces scripts sont des anciennes versions ou des doublons.
+Utilisez les scripts principaux listés ci-dessus.
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

@@ -1,0 +1,85 @@
+╔════════════════════════════════════════════════════════════════╗
+║   CONFIGURATION GOOGLE OAUTH - GUIDE SIMPLE                   ║
+╚════════════════════════════════════════════════════════════════╝
+
+📋 ETAPES RAPIDES (5 minutes)
+═══════════════════════════════════════════════════════════════
+
+ETAPE 1: ALLER SUR GOOGLE CLOUD CONSOLE
+────────────────────────────────────────
+👉 Ouvrez: https://console.cloud.google.com/
+👉 Connectez-vous avec votre compte Google
+
+ETAPE 2: CREER UN PROJET
+─────────────────────────
+👉 Cliquez sur le nom du projet (en haut)
+👉 Cliquez sur "NOUVEAU PROJET"
+👉 Nom: CB_Community
+👉 Cliquez sur "CRÉER"
+
+ETAPE 3: ACTIVER L'API
+───────────────────────
+👉 Menu gauche (☰) > "APIs et services" > "Bibliothèque"
+👉 Recherchez: "Google Identity"
+👉 Cliquez sur "Google Identity Services API"
+👉 Cliquez sur "ACTIVER"
+
+ETAPE 4: CREER ID CLIENT
+─────────────────────────
+👉 Menu gauche > "Identifiants"
+👉 Cliquez sur "+ CRÉER DES IDENTIFIANTS"
+👉 Cliquez sur "ID client OAuth"
+
+👉 Remplissez:
+   Type: Application Web
+   Nom: CB_Community
+   
+   URIs de redirection (ajoutez toutes):
+   http://localhost:3000/api/auth/callback/google
+   http://127.0.0.1:3000/api/auth/callback/google
+   http://192.168.1.51:3000/api/auth/callback/google
+
+👉 Cliquez sur "CRÉER"
+👉 COPIEZ le Client ID et Client Secret (fenêtre popup)
+
+ETAPE 5: CONFIGURER DANS LE SITE
+──────────────────────────────────
+👉 Double-cliquez sur: CONFIGURER_GOOGLE_RAPIDE.bat
+👉 Collez le Client ID
+👉 Collez le Client Secret
+👉 Le script configure tout automatiquement!
+
+ETAPE 6: REDEMARRER
+────────────────────
+👉 Fermez le serveur (Ctrl+C)
+👉 Relancez: DEMARRER_MAINTENANT.bat
+👉 Testez: http://localhost:3000/login
+👉 Les boutons Google apparaîtront!
+
+═══════════════════════════════════════════════════════════════
+✅ APRES CONFIGURATION
+═══════════════════════════════════════════════════════════════
+
+Quand un utilisateur clique sur "Continuer avec Google":
+✅ Tous ses comptes Google apparaissent (téléphone, laptop)
+✅ Il peut choisir le compte qu'il veut
+✅ Le compte est créé/connecté automatiquement
+✅ Pas besoin de vérifier l'email
+
+═══════════════════════════════════════════════════════════════
+🔧 SI VOUS AVEZ DES PROBLEMES
+═══════════════════════════════════════════════════════════════
+
+Problème: "redirect_uri_mismatch"
+👉 Vérifiez que toutes les URLs sont dans Google Console
+
+Problème: Boutons n'apparaissent pas
+👉 Redémarrez le serveur après configuration
+
+Problème: Erreur "invalid_client"
+👉 Vérifiez que Client ID et Secret sont corrects dans .env
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

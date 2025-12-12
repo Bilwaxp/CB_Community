@@ -1,0 +1,121 @@
+╔════════════════════════════════════════════════════════════════╗
+║   CONFIGURATION DES MÉTHODES DE PAIEMENT                      ║
+╚════════════════════════════════════════════════════════════════╝
+
+✅ INFORMATIONS DE PAIEMENT CONFIGURÉES
+═══════════════════════════════════════════════════════════════
+
+Toutes les méthodes de paiement sont maintenant configurées avec
+vos informations réelles.
+
+═══════════════════════════════════════════════════════════════
+📱 MONCASH
+═══════════════════════════════════════════════════════════════
+
+Numéro: +509 4817 6784
+Format: +50948176784
+
+Les utilisateurs devront:
+1. Entrer leur numéro Moncash
+2. Scanner le QR Code généré
+3. Envoyer le montant via l'application Moncash
+
+═══════════════════════════════════════════════════════════════
+📱 NATCASH
+═══════════════════════════════════════════════════════════════
+
+Numéro: +509 4268 1445
+Format: +50942681445
+
+Les utilisateurs devront:
+1. Entrer leur numéro Natcash
+2. Suivre les instructions de paiement
+3. Envoyer le montant via Natcash
+
+═══════════════════════════════════════════════════════════════
+💳 PAYPAL
+═══════════════════════════════════════════════════════════════
+
+Email: wadlexmo@gmail.com
+
+Les utilisateurs devront:
+1. Envoyer le montant à cet email PayPal
+2. Confirmer le paiement
+3. Attendre la vérification manuelle
+
+═══════════════════════════════════════════════════════════════
+💸 ZELLE
+═══════════════════════════════════════════════════════════════
+
+Email: wadlexmo@gmail.com
+Nom: CB Community
+
+Les utilisateurs devront:
+1. Envoyer le montant via Zelle à cet email
+2. Confirmer le paiement
+3. Attendre la vérification manuelle
+
+═══════════════════════════════════════════════════════════════
+₿ CRYPTOMONNAIE (USDT)
+═══════════════════════════════════════════════════════════════
+
+Adresse USDT (TRC20): TEzp6i7rzBws15CUsXxhZg75SNL7FPghxD
+Réseau: TRC20
+Type: USDT (Tether)
+
+⚠️ IMPORTANT: Les utilisateurs doivent envoyer sur le réseau TRC20
+
+Les utilisateurs devront:
+1. Copier l'adresse du portefeuille
+2. Envoyer le montant équivalent en USDT
+3. Entrer le hash de transaction
+4. Confirmer le paiement
+5. Attendre la vérification manuelle
+
+═══════════════════════════════════════════════════════════════
+💳 CARTE DE CRÉDIT/DÉBIT (STRIPE)
+═══════════════════════════════════════════════════════════════
+
+✅ Configuration automatique via Stripe
+✅ Paiement instantané
+✅ Activation automatique
+
+═══════════════════════════════════════════════════════════════
+📋 OÙ SONT LES INFORMATIONS?
+═══════════════════════════════════════════════════════════════
+
+Les informations sont stockées dans:
+- Fichier: src/lib/payment-config.ts
+- Utilisées dans: src/app/payment/[method]/[paymentId]/page.tsx
+
+Pour modifier les informations:
+1. Éditez src/lib/payment-config.ts
+2. Redémarrez le serveur
+
+═══════════════════════════════════════════════════════════════
+⚠️ IMPORTANT
+═══════════════════════════════════════════════════════════════
+
+1. Vérifiez régulièrement les paiements en attente
+2. Pour les paiements manuels, vérifiez:
+   - PayPal: wadlexmo@gmail.com
+   - Zelle: wadlexmo@gmail.com
+   - Moncash: +509 4817 6784
+   - Natcash: +509 4268 1445
+   - USDT: TEzp6i7rzBws15CUsXxhZg75SNL7FPghxD (TRC20)
+
+3. Après vérification, approuvez le paiement dans l'admin
+4. Le plan sera activé automatiquement
+
+═══════════════════════════════════════════════════════════════
+✅ TOUT EST CONFIGURÉ!
+═══════════════════════════════════════════════════════════════
+
+Toutes les méthodes de paiement utilisent maintenant vos
+vraies informations. Les utilisateurs verront ces informations
+lorsqu'ils choisiront une méthode de paiement.
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

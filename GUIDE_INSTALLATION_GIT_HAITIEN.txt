@@ -1,0 +1,95 @@
+╔════════════════════════════════════════════════════════════════╗
+║   GID - ENSTALASYON GIT                                        ║
+╚════════════════════════════════════════════════════════════════╝
+
+✅ ENSTALASYON GIT POU GITHUB
+═══════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════════
+📥 ETAP 1: TELECHARJE GIT
+═══════════════════════════════════════════════════════════════
+
+1. ALE SOU:
+───────────
+   → https://git-scm.com/download/win
+   → Oswa ekzekite: INSTALLER_GIT.bat
+
+2. TELECHARJE:
+──────────────
+   → Klike sou "Download for Windows"
+   → Telechajman an ap kòmanse otomatikman
+
+═══════════════════════════════════════════════════════════════
+🔧 ETAP 2: ENSTALE GIT
+═══════════════════════════════════════════════════════════════
+
+1. DOUBLE-KLIKE SOU DOSYE TELECHARJE A:
+───────────────────────────────────────
+   → Egzanp: Git-2.xx.x-64-bit.exe
+
+2. SWIV ENSTALASYON AN:
+───────────────────────
+   → Klike sou "Next" pou chak etap
+   → Aksepte opsyon pa defo yo
+   → Kite "Git from the command line and also from 3rd-party software" koche
+   → Klike sou "Install"
+
+3. TANN FIN ENSTALASYON AN:
+───────────────────────────
+   → Sa ka pran kèk minit
+   → Klike sou "Finish" nan fen an
+
+═══════════════════════════════════════════════════════════════
+🔄 ETAP 3: REDEMARE
+═══════════════════════════════════════════════════════════════
+
+1. REDEMARE ORDINATÈ OU:
+────────────────────────
+   → Enpòtan pou Git ka rekonèt toupatou
+   → Fèmen tout aplikasyon yo
+   → Redemare Windows
+
+2. VERIFYE ENSTALASYON AN:
+──────────────────────────
+   → Ouvri PowerShell oswa CMD
+   → Ekzekite: git --version
+   → Ou dwe wè: git version 2.xx.x
+
+═══════════════════════════════════════════════════════════════
+🚀 ETAP 4: KONTINYE AK GITHUB
+═══════════════════════════════════════════════════════════════
+
+APRE REDEMARAJ LA:
+
+1. EKZEKITE: HEBERGER_SUR_GITHUB.bat
+   → Script la ap fonksyone kounye a
+
+2. SWIV ENSTRUKSYON YO:
+   → Kreye yon depo sou GitHub
+   → Pouse kòd ou
+
+═══════════════════════════════════════════════════════════════
+📋 ALTERNATIF: ITILIZE GITHUB DESKTOP
+═══════════════════════════════════════════════════════════════
+
+Si ou prefere yon entèfas grafik:
+
+1. TELECHARJE GITHUB DESKTOP:
+   → https://desktop.github.com
+   → Enstale li
+
+2. ITILIZE GITHUB DESKTOP:
+   → Pi fasil pou kòmanse
+   → Entèfas grafik
+   → Pa bezwen liy kòmand
+
+═══════════════════════════════════════════════════════════════
+✅ TOUT BAGAY PRET!
+═══════════════════════════════════════════════════════════════
+
+Enstale Git, redemare, epi ekzekite HEBERGER_SUR_GITHUB.bat!
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

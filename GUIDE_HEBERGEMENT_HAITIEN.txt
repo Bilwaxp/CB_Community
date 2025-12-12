@@ -1,0 +1,127 @@
+╔════════════════════════════════════════════════════════════════╗
+║   GID KONPLÈ - EBERJMAN SIT LA                                  ║
+╚════════════════════════════════════════════════════════════════╝
+
+✅ SIT LA PRET POU EBERJE!
+═══════════════════════════════════════════════════════════════
+
+Sit la konpile e prèt. Men kijan pou ebèje li.
+
+═══════════════════════════════════════════════════════════════
+🚀 METÒD 1: EBERJMAN REZO LOKAL (REKOMANDE)
+═══════════════════════════════════════════════════════════════
+
+1. EKZEKITE SCRIPT LA:
+──────────────────────
+   → Double-klike sou: HEBERGER_SITE.bat
+   → Script la ap:
+     - Jwenn IP lokal ou
+     - Konfigure firewall
+     - Demare sèvè a
+
+2. AKSÈ SIT LA:
+───────────────
+   → Sou òdinatè ou: http://localhost:3000
+   → Sou rezo lokal: http://IP_OU:3000
+   → Sou telefòn/tablet (menm WiFi): http://IP_OU:3000
+
+═══════════════════════════════════════════════════════════════
+🌐 METÒD 2: EBERJMAN ENTÈNET
+═══════════════════════════════════════════════════════════════
+
+POU RANN SIT LA AKSIB DEPUIS ENTÈNET:
+
+1. JWENN IP PIBLIK OU:
+───────────────────────
+   → Ale sou: https://whatismyipaddress.com
+   → Note IP piblik ou (ex: 123.45.67.89)
+
+2. KONFIGURE PORT FORWARDING:
+─────────────────────────────
+   → Konekte nan routeur ou (jeneralman 192.168.1.1)
+   → Ale nan "Port Forwarding" oswa "Virtual Server"
+   → Kreye yon règ:
+     - Pò ekstèn: 3000
+     - Pò entèn: 3000
+     - IP entèn: IP_LOKAL_OU (jwenn ak HEBERGER_SITE.bat)
+     - Pwotokòl: TCP
+   → Sove
+
+3. METE AJOU .env:
+──────────────────
+   → Ouvri dosye .env
+   → Chanje NEXTAUTH_URL:
+     NEXTAUTH_URL=http://IP_PIBLIK_OU:3000
+   → Sove
+
+4. REDEMARE SEVÈ A:
+───────────────────
+   → Ekzekite HEBERGER_SITE.bat ankò
+
+5. AKSÈ:
+─────────
+   → Sit la ap aksib sou: http://IP_PIBLIK_OU:3000
+   → Depi nenpòt kote nan mond lan!
+
+═══════════════════════════════════════════════════════════════
+🔧 KONFIGIRASYON MANUEL FIREWALL
+═══════════════════════════════════════════════════════════════
+
+Si script la pa konfigure firewall otomatikman:
+
+1. Ouvri "Pare-feu Windows Defender"
+2. Klike sou "Paramètres avancés"
+3. Klike sou "Règles de trafic entrant"
+4. Klike sou "Nouvelle règle"
+5. Chwazi "Port"
+6. TCP, Pò espesifik: 3000
+7. Otorize koneksyon an
+8. Koche tout pwofil yo
+9. Non: "CB_Community Port 3000"
+10. Fini
+
+═══════════════════════════════════════════════════════════════
+📋 SCRIPT DISPONIB
+═══════════════════════════════════════════════════════════════
+
+✅ HEBERGER_SITE.bat
+   → Script konplè pou ebèje (REKOMANDE)
+
+✅ LANCER_FINAL.bat
+   → Demaraj senp nan lokal
+
+✅ CONFIGURER_FIREWALL.bat
+   → Konfigirasyon firewall sèlman
+
+✅ TROUVER_IP.bat
+   → Jwenn adrès IP ou
+
+═══════════════════════════════════════════════════════════════
+⚠️ SEKIRITE ENPÒTAN
+═══════════════════════════════════════════════════════════════
+
+POU PWODIKSYON:
+
+1. CHANJE NEXTAUTH_SECRET:
+   → Nan .env, jenere yon kle aza:
+   → Ekzekite: GENERER_SECRET.bat
+
+2. KONFIGURE KLE API:
+   → Stripe (si w itilize kat yo)
+   → Google OAuth (si w itilize Google)
+   → SMTP (pou imèl yo)
+
+3. ITILIZE HTTPS:
+   → Pou pwodiksyon, itilize yon reverse proxy (nginx)
+   → Oswa itilize yon sèvis tankou Cloudflare Tunnel
+
+═══════════════════════════════════════════════════════════════
+✅ TOUT BAGAY PRET!
+═══════════════════════════════════════════════════════════════
+
+Ekzekite HEBERGER_SITE.bat pou ebèje sit la!
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

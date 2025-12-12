@@ -1,0 +1,95 @@
+╔════════════════════════════════════════════════════════════════╗
+║   GUIDE - UPLOAD DE MÉDIAS (VIDÉOS, IMAGES, PDF)              ║
+╚════════════════════════════════════════════════════════════════╝
+
+✅ INTERFACE COMPLÈTE POUR UPLOADER DES FICHIERS
+═══════════════════════════════════════════════════════════════
+
+Une interface complète a été créée pour uploader et gérer:
+✅ Vidéos (MP4, WebM)
+✅ Images (JPG, PNG, GIF)
+✅ Documents PDF
+
+═══════════════════════════════════════════════════════════════
+📍 ACCÈS
+═══════════════════════════════════════════════════════════════
+
+URL: http://localhost:3000/admin/media
+
+═══════════════════════════════════════════════════════════════
+🎯 FONCTIONNALITÉS
+═══════════════════════════════════════════════════════════════
+
+1. UPLOAD DE FICHIERS
+─────────────────────
+✅ Glisser-déposer des fichiers
+✅ Sélection multiple de fichiers
+✅ Support de plusieurs formats
+✅ Aperçu des fichiers sélectionnés
+✅ Affichage de la taille des fichiers
+
+2. GESTION DES FICHIERS
+───────────────────────
+✅ Vue en grille avec aperçus
+✅ Recherche de fichiers
+✅ Filtres par type (Images/Vidéos/PDF)
+✅ Statistiques (total, images, vidéos, PDF)
+✅ Copier l'URL d'un fichier
+✅ Voir le fichier
+✅ Supprimer des fichiers
+
+3. AFFICHAGE
+────────────
+✅ Aperçu des images
+✅ Miniature des vidéos
+✅ Icônes pour les PDF
+✅ Informations détaillées (nom, taille, type)
+
+═══════════════════════════════════════════════════════════════
+📋 COMMENT UTILISER
+═══════════════════════════════════════════════════════════════
+
+1. UPLOADER DES FICHIERS:
+─────────────────────────
+   → Cliquez sur "Uploader des fichiers"
+   → Glissez-déposez vos fichiers dans la zone
+   → OU cliquez pour sélectionner des fichiers
+   → Cliquez sur "Uploader"
+
+2. VOIR LES FICHIERS:
+─────────────────────
+   → Tous les fichiers sont affichés en grille
+   → Passez la souris pour voir les actions
+   → Cliquez sur l'icône "Voir" pour ouvrir
+   → Cliquez sur "Copier" pour copier l'URL
+
+3. UTILISER LES FICHIERS:
+──────────────────────────
+   → Copiez l'URL du fichier
+   → Utilisez cette URL dans vos cours/leçons
+   → Les fichiers sont accessibles publiquement via /uploads/
+
+═══════════════════════════════════════════════════════════════
+📁 EMPLACEMENT DES FICHIERS
+═══════════════════════════════════════════════════════════════
+
+Les fichiers sont stockés dans:
+→ public/uploads/
+
+URLs des fichiers:
+→ http://localhost:3000/uploads/nom-du-fichier
+
+═══════════════════════════════════════════════════════════════
+✅ TOUT EST PRÊT!
+═══════════════════════════════════════════════════════════════
+
+L'interface est complète et fonctionnelle. Vous pouvez:
+- Uploader des vidéos, images et PDF
+- Gérer tous vos fichiers multimédias
+- Copier les URLs pour les utiliser dans vos cours
+- Supprimer les fichiers inutiles
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

@@ -1,0 +1,122 @@
+╔════════════════════════════════════════════════════════════════╗
+║   GUIDE - POUSSER LE CODE SUR GITHUB                            ║
+╚════════════════════════════════════════════════════════════════╝
+
+✅ MÉTHODE SIMPLE (RECOMMANDÉE)
+═══════════════════════════════════════════════════════════════
+
+1. EXÉCUTEZ: PUSHER_SUR_GITHUB.bat
+   → Le script fait tout automatiquement
+   → Vous devrez juste créer le dépôt sur GitHub
+   → Et entrer l'URL quand demandé
+
+═══════════════════════════════════════════════════════════════
+🌐 CRÉER LE DÉPÔT SUR GITHUB
+═══════════════════════════════════════════════════════════════
+
+1. ALLEZ SUR: https://github.com/new
+
+2. REMPLISSEZ LE FORMULAIRE:
+   → Repository name: CB_Community (ou autre nom)
+   → Description: Site web CB_Community
+   → Visibilité: Public ou Private
+   → NE cochez PAS "Initialize with README"
+   → NE cochez PAS "Add .gitignore"
+   → NE cochez PAS "Choose a license"
+
+3. CLIQUez SUR "Create repository"
+
+4. COPIEZ L'URL:
+   → Exemple: https://github.com/VOTRE_USERNAME/CB_Community.git
+
+═══════════════════════════════════════════════════════════════
+🔐 CRÉER UN TOKEN GITHUB
+═══════════════════════════════════════════════════════════════
+
+GitHub ne permet plus d'utiliser votre mot de passe.
+Vous devez créer un token d'accès:
+
+1. ALLEZ SUR: https://github.com/settings/tokens
+
+2. CLIQUez SUR:
+   → "Generate new token" > "Generate new token (classic)"
+
+3. CONFIGUREZ:
+   → Note: "CB_Community Access"
+   → Expiration: 90 jours (ou plus)
+   → Permissions: repo (cochez tout sous "repo")
+
+4. CLIQUez SUR "Generate token"
+
+5. COPIEZ LE TOKEN:
+   → ⚠️ IMPORTANT: Copiez-le maintenant!
+   → Vous ne le reverrez plus jamais
+   → Utilisez-le comme "mot de passe" lors du push
+
+═══════════════════════════════════════════════════════════════
+📤 UTILISER LE SCRIPT AUTOMATIQUE
+═══════════════════════════════════════════════════════════════
+
+1. EXÉCUTEZ: PUSHER_SUR_GITHUB.bat
+
+2. QUAND LE SCRIPT DEMANDE L'URL:
+   → Collez l'URL de votre dépôt GitHub
+   → Exemple: https://github.com/VOTRE_USERNAME/CB_Community.git
+
+3. QUAND GIT DEMANDE VOS IDENTIFIANTS:
+   → Username: VOTRE_USERNAME_GITHUB
+   → Password: VOTRE_TOKEN_GITHUB (pas votre mot de passe!)
+
+4. ATTENDEZ:
+   → Le code sera poussé sur GitHub
+   → Vous verrez "SUCCES!" à la fin
+
+═══════════════════════════════════════════════════════════════
+📋 COMMANDES MANUELLES (SI NÉCESSAIRE)
+═══════════════════════════════════════════════════════════════
+
+Si le script ne fonctionne pas, utilisez ces commandes:
+
+1. Lier le dépôt:
+   git remote add origin https://github.com/VOTRE_USERNAME/CB_Community.git
+
+2. Faire le commit:
+   git commit -m "Initial commit - CB_Community"
+
+3. Changer la branche:
+   git branch -M main
+
+4. Pousser:
+   git push -u origin main
+
+═══════════════════════════════════════════════════════════════
+✅ VÉRIFICATION
+═══════════════════════════════════════════════════════════════
+
+Après le push, allez sur votre dépôt GitHub:
+→ https://github.com/VOTRE_USERNAME/CB_Community
+
+Vous devriez voir tous vos fichiers!
+
+═══════════════════════════════════════════════════════════════
+⚠️ IMPORTANT
+═══════════════════════════════════════════════════════════════
+
+Ces fichiers NE seront PAS sur GitHub:
+❌ .env (sécurité)
+❌ prisma/dev.db (base de données)
+❌ node_modules/ (dépendances)
+❌ .next/ (build)
+
+Tout le reste sera sur GitHub!
+
+═══════════════════════════════════════════════════════════════
+✅ TOUT EST PRÊT!
+═══════════════════════════════════════════════════════════════
+
+Exécutez PUSHER_SUR_GITHUB.bat pour commencer!
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

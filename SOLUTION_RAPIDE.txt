@@ -1,0 +1,115 @@
+╔════════════════════════════════════════════════════════════════╗
+║   LE SERVEUR NE SE LANCE PAS - SOLUTION                       ║
+╚════════════════════════════════════════════════════════════════╝
+
+❌ PROBLÈME
+═══════════════════════════════════════════════════════════════
+
+Le serveur ne se lance pas ou se ferme immédiatement.
+
+═══════════════════════════════════════════════════════════════
+✅ SOLUTION IMMEDIATE
+═══════════════════════════════════════════════════════════════
+
+👉 Double-cliquez sur: DEMARRER_SIMPLE.bat
+
+Ce script est plus simple et plus robuste.
+Il affiche toutes les erreurs pour que vous puissiez les voir.
+
+═══════════════════════════════════════════════════════════════
+🔍 VERIFICATION MANUELLE
+═══════════════════════════════════════════════════════════════
+
+Si le script ne fonctionne toujours pas, vérifiez:
+
+1. Node.js est installé?
+   → Ouvrez PowerShell
+   → Tapez: node --version
+   → Si erreur: Installez Node.js depuis https://nodejs.org/
+
+2. Vous êtes dans le bon dossier?
+   → Le dossier doit contenir: package.json
+   → Le dossier doit contenir: next.config.mjs
+
+3. Les dépendances sont installées?
+   → Ouvrez PowerShell dans le dossier
+   → Tapez: npm install
+   → Attendez la fin de l'installation
+
+4. Le build existe?
+   → Ouvrez PowerShell dans le dossier
+   → Tapez: npm run build
+   → Attendez la fin de la compilation
+
+5. Démarrer le serveur manuellement:
+   → Ouvrez PowerShell dans le dossier
+   → Tapez: npm start
+   → Le serveur devrait démarrer
+
+═══════════════════════════════════════════════════════════════
+📋 SCRIPTS DISPONIBLES
+═══════════════════════════════════════════════════════════════
+
+✅ DEMARRER_SIMPLE.bat (RECOMMANDÉ)
+   → Version simple et robuste
+   → Affiche toutes les erreurs
+
+✅ LANCER_SITE_FIXE.bat
+   → Version améliorée avec meilleure gestion d'erreurs
+
+✅ RESOUDRE_CONNEXION.bat
+   → Diagnostic complet étape par étape
+
+═══════════════════════════════════════════════════════════════
+⚠️ ERREURS COURANTES
+═══════════════════════════════════════════════════════════════
+
+ERREUR: "Node.js n'est pas reconnu"
+SOLUTION: 
+  1. Installez Node.js depuis https://nodejs.org/
+  2. Redémarrez votre ordinateur
+  3. Réessayez
+
+ERREUR: "npm n'est pas reconnu"
+SOLUTION:
+  1. Réinstallez Node.js (npm est inclus)
+  2. Redémarrez votre ordinateur
+
+ERREUR: "Cannot find module"
+SOLUTION:
+  1. Ouvrez PowerShell dans le dossier
+  2. Tapez: npm install
+  3. Attendez la fin
+
+ERREUR: "Build failed"
+SOLUTION:
+  1. Vérifiez les erreurs TypeScript affichées
+  2. Corrigez les erreurs dans les fichiers
+  3. Réessayez: npm run build
+
+ERREUR: "Port 3000 already in use"
+SOLUTION:
+  1. Fermez toutes les fenêtres Node.js
+  2. Ou changez le port dans package.json
+
+═══════════════════════════════════════════════════════════════
+💡 DEMARRAGE MANUEL
+═══════════════════════════════════════════════════════════════
+
+Si les scripts ne fonctionnent pas, démarrez manuellement:
+
+1. Ouvrez PowerShell dans le dossier CB_ONE
+2. Tapez ces commandes une par une:
+
+   npm install
+   npx prisma generate
+   npx prisma db push --accept-data-loss
+   npm run build
+   npm start
+
+3. Le serveur devrait démarrer sur http://localhost:3000
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

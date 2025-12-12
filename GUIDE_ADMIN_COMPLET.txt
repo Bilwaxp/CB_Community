@@ -1,0 +1,192 @@
+╔════════════════════════════════════════════════════════════════╗
+║   GUIDE COMPLET - PANEL ADMINISTRATEUR                        ║
+╚════════════════════════════════════════════════════════════════╝
+
+🎯 FONCTIONNALITÉS ADMINISTRATEUR
+═══════════════════════════════════════════════════════════════
+
+Le panel administrateur vous donne un contrôle total sur:
+✅ Les utilisateurs (voir, approuver, bannir, gérer)
+✅ Les cours et vidéos (créer, modifier, publier)
+✅ Les documents et photos (uploader, gérer)
+✅ Les plans d'abonnement (BASIC, PRO, VIP)
+✅ Les paiements et abonnements
+
+═══════════════════════════════════════════════════════════════
+👥 GESTION DES UTILISATEURS
+═══════════════════════════════════════════════════════════════
+
+URL: http://localhost:3000/admin/users
+
+FONCTIONNALITÉS:
+────────────────
+✅ Voir tous les utilisateurs inscrits
+✅ Rechercher un utilisateur par nom ou email
+✅ Filtrer par statut (En attente / Approuvé / Banni)
+✅ Approuver les utilisateurs en attente
+✅ Bannir/Débannir des utilisateurs
+✅ Modifier le plan d'un utilisateur
+✅ Voir les statistiques (total, en attente, approuvés, bannis)
+
+ACTIONS DISPONIBLES:
+─────────────────────
+1. Approuver un utilisateur:
+   → Cliquez sur le bouton vert ✓ à côté de l'utilisateur
+   → Ou utilisez l'action en lot pour plusieurs utilisateurs
+
+2. Bannir un utilisateur:
+   → Cliquez sur le bouton rouge ✗
+   → L'utilisateur ne pourra plus se connecter
+
+3. Modifier le plan:
+   → Allez dans la section Plans
+   → Sélectionnez l'utilisateur
+   → Changez son plan (BASIC / PRO / VIP)
+
+═══════════════════════════════════════════════════════════════
+📹 GESTION DES COURS ET VIDÉOS
+═══════════════════════════════════════════════════════════════
+
+URL: http://localhost:3000/admin/courses
+
+CRÉER UN COURS:
+───────────────
+1. Cliquez sur "Nouveau cours"
+2. Remplissez les informations:
+   - Titre du cours
+   - Description
+   - Image de couverture (thumbnail)
+   - Prix
+   - Niveau (Débutant / Intermédiaire / Avancé)
+   - Plan minimum requis (BASIC / PRO / VIP)
+3. Cliquez sur "Créer"
+
+AJOUTER DES VIDÉOS:
+───────────────────
+1. Ouvrez le cours créé
+2. Créez un module (section du cours)
+3. Ajoutez des leçons dans le module:
+   - Titre de la leçon
+   - Description
+   - URL de la vidéo (YouTube, Vimeo, ou votre serveur)
+   - Durée en minutes
+   - Type: Vidéo / PDF / Image / Audio
+4. Choisissez si la leçon est gratuite ou payante
+5. Publiez la leçon
+
+TYPES DE CONTENU SUPPORTÉS:
+───────────────────────────
+✅ Vidéos (URL YouTube, Vimeo, ou serveur)
+✅ PDF (documents à télécharger)
+✅ Images (photos, schémas)
+✅ Audio (podcasts, enregistrements)
+✅ Texte/HTML (contenu écrit)
+
+═══════════════════════════════════════════════════════════════
+📄 GESTION DES DOCUMENTS ET PHOTOS
+═══════════════════════════════════════════════════════════════
+
+UPLOADER DES FICHIERS:
+──────────────────────
+1. Allez dans le cours où vous voulez ajouter un document
+2. Créez une nouvelle leçon
+3. Choisissez le type: PDF, Image, ou Audio
+4. Uploadez le fichier ou entrez l'URL
+5. Sauvegardez
+
+FORMATS SUPPORTÉS:
+──────────────────
+✅ Images: JPG, PNG, GIF, WebP
+✅ Documents: PDF
+✅ Vidéos: MP4, WebM (ou URL)
+✅ Audio: MP3, WAV
+
+═══════════════════════════════════════════════════════════════
+💳 GESTION DES PLANS D'ABONNEMENT
+═══════════════════════════════════════════════════════════════
+
+URL: http://localhost:3000/admin/users (filtrez par plan)
+
+VOIR LES UTILISATEURS PAR PLAN:
+────────────────────────────────
+1. Allez sur /admin/users
+2. Utilisez les filtres pour voir:
+   - Tous les utilisateurs BASIC
+   - Tous les utilisateurs PRO
+   - Tous les utilisateurs VIP
+
+MODIFIER LE PLAN D'UN UTILISATEUR:
+───────────────────────────────────
+1. Trouvez l'utilisateur dans la liste
+2. Cliquez sur "Modifier"
+3. Changez le plan:
+   - BASIC: Accès limité
+   - PRO: Accès à plus de contenu
+   - VIP: Accès complet
+4. Définissez la date d'expiration (optionnel)
+5. Sauvegardez
+
+STATISTIQUES DES PLANS:
+───────────────────────
+Vous verrez automatiquement:
+- Nombre d'utilisateurs BASIC
+- Nombre d'utilisateurs PRO
+- Nombre d'utilisateurs VIP
+- Revenus par plan
+
+═══════════════════════════════════════════════════════════════
+🎛️ CONTRÔLE COMPLET
+═══════════════════════════════════════════════════════════════
+
+VOUS POUVEZ:
+────────────
+✅ Voir tous les utilisateurs inscrits
+✅ Approuver ou rejeter les nouvelles inscriptions
+✅ Bannir des utilisateurs
+✅ Modifier les plans d'abonnement
+✅ Créer et publier des cours
+✅ Ajouter des vidéos, documents, photos
+✅ Gérer le contenu disponible pour chaque plan
+✅ Voir les statistiques complètes
+
+ACCÈS RAPIDE:
+─────────────
+- Dashboard Admin: http://localhost:3000/admin
+- Utilisateurs: http://localhost:3000/admin/users
+- Cours: http://localhost:3000/admin/courses
+- Paiements: http://localhost:3000/admin/payments (à venir)
+
+═══════════════════════════════════════════════════════════════
+📋 WORKFLOW RECOMMANDÉ
+═══════════════════════════════════════════════════════════════
+
+1. NOUVEAU UTILISATEUR S'INSCRIT:
+   → Allez sur /admin/users
+   → Vérifiez l'utilisateur
+   → Approuvez-le (bouton vert ✓)
+
+2. CRÉER UN COURS:
+   → Allez sur /admin/courses
+   → Créez un nouveau cours
+   → Ajoutez des modules et leçons
+   → Uploadez les vidéos/documents
+   → Publiez le cours
+
+3. GÉRER LES PLANS:
+   → Allez sur /admin/users
+   → Filtrez par plan
+   → Modifiez les plans selon les besoins
+
+═══════════════════════════════════════════════════════════════
+⚠️ IMPORTANT
+═══════════════════════════════════════════════════════════════
+
+1. Vous devez être connecté en tant qu'ADMIN
+2. Créez votre compte admin avec: CREER_ADMIN.bat
+3. Les changements sont sauvegardés automatiquement
+4. Les utilisateurs voient les changements immédiatement
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

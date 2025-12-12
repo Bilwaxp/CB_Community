@@ -1,0 +1,192 @@
+╔════════════════════════════════════════════════════════════════╗
+║   GID ADMIN - KONTWÒL KONPLÈ                                  ║
+╚════════════════════════════════════════════════════════════════╝
+
+🎯 FONKSYONALITE ADMINISTRATÈ
+═══════════════════════════════════════════════════════════════
+
+Panel administrateur la ba ou kontwòl konplè sou:
+✅ Itilizatè yo (wè, aprouve, bani, jere)
+✅ Kò ak videyo (kreye, modifye, pibliye)
+✅ Dokiman ak foto (upload, jere)
+✅ Plan abònman (BASIC, PRO, VIP)
+✅ Peman ak abònman
+
+═══════════════════════════════════════════════════════════════
+👥 JESTION ITILIZATÈ
+═══════════════════════════════════════════════════════════════
+
+URL: http://localhost:3000/admin/users
+
+FONKSYONALITE:
+──────────────
+✅ Wè tout itilizatè ki enskri
+✅ Chèche yon itilizatè pa non oswa email
+✅ Filtre pa estati (An atant / Aprouve / Bani)
+✅ Aprouve itilizatè ki an atant
+✅ Bani/Debani itilizatè
+✅ Modifye plan yon itilizatè
+✅ Wè estatistik (total, an atant, aprouve, bani)
+
+AKSYON DISPONIB:
+─────────────────
+1. Aprouve yon itilizatè:
+   → Klike sou bouton vèt ✓ akote itilizatè a
+   → Oubyen itilize aksyon an lot pou plizyè itilizatè
+
+2. Bani yon itilizatè:
+   → Klike sou bouton wouj ✗
+   → Itilizatè a p ap ka konekte ankò
+
+3. Modifye plan:
+   → Ale nan seksyon Plan
+   → Chwazi itilizatè a
+   → Chanje plan li (BASIC / PRO / VIP)
+
+═══════════════════════════════════════════════════════════════
+📹 JESTION KÒ AK VIDEYO
+═══════════════════════════════════════════════════════════════
+
+URL: http://localhost:3000/admin/courses
+
+KREYE YON KÒ:
+─────────────
+1. Klike sou "Nouvo kò"
+2. Ranpli enfòmasyon yo:
+   - Tit kò a
+   - Deskripsyon
+   - Imaj kouvèti (thumbnail)
+   - Pri
+   - Nivo (Debutan / Entèmedyè / Avanse)
+   - Plan minimòm ki nesesè (BASIC / PRO / VIP)
+3. Klike sou "Kreye"
+
+AJOUTE VIDEYO:
+──────────────
+1. Ouvri kò a ki kreye
+2. Kreye yon modil (seksyon nan kò a)
+3. Ajoute leson nan modil la:
+   - Tit leson an
+   - Deskripsyon
+   - URL videyo (YouTube, Vimeo, oswa sèvè ou)
+   - Dire nan minit
+   - Tip: Videyo / PDF / Imaj / Odio
+4. Chwazi si leson an gratis oswa peye
+5. Pibliye leson an
+
+TIP KONTENI SIPOÒTE:
+───────────────────
+✅ Videyo (URL YouTube, Vimeo, oswa sèvè)
+✅ PDF (dokiman pou telechaje)
+✅ Imaj (foto, dyagram)
+✅ Odio (podcast, anrejistreman)
+✅ Tèks/HTML (konteni ekri)
+
+═══════════════════════════════════════════════════════════════
+📄 JESTION DOKIMAN AK FOTO
+═══════════════════════════════════════════════════════════════
+
+UPLOAD DOSYE:
+─────────────
+1. Ale nan kò a kote ou vle ajoute yon dokiman
+2. Kreye yon nouvo leson
+3. Chwazi tip: PDF, Imaj, oswa Odio
+4. Upload dosye a oswa antre URL la
+5. Sove
+
+FÒMA SIPOÒTE:
+─────────────
+✅ Imaj: JPG, PNG, GIF, WebP
+✅ Dokiman: PDF
+✅ Videyo: MP4, WebM (oswa URL)
+✅ Odio: MP3, WAV
+
+═══════════════════════════════════════════════════════════════
+💳 JESTION PLAN ABÒNMAN
+═══════════════════════════════════════════════════════════════
+
+URL: http://localhost:3000/admin/users (filtre pa plan)
+
+WÈ ITILIZATÈ PA PLAN:
+──────────────────────
+1. Ale sou /admin/users
+2. Itilize filt yo pou wè:
+   - Tout itilizatè BASIC
+   - Tout itilizatè PRO
+   - Tout itilizatè VIP
+
+MODIFYE PLAN YON ITILIZATÈ:
+────────────────────────────
+1. Jwenn itilizatè a nan lis la
+2. Klike sou "Modifye"
+3. Chanje plan:
+   - BASIC: Aksè limite
+   - PRO: Aksè nan plis konteni
+   - VIP: Aksè konplè
+4. Defini dat ekspirasyon (opsyonel)
+5. Sove
+
+ESTATISTIK PLAN:
+────────────────
+Ou ap wè otomatikman:
+- Kantite itilizatè BASIC
+- Kantite itilizatè PRO
+- Kantite itilizatè VIP
+- Revni pa plan
+
+═══════════════════════════════════════════════════════════════
+🎛️ KONTWÒL KONPLÈ
+═══════════════════════════════════════════════════════════════
+
+OU KAPAB:
+─────────
+✅ Wè tout itilizatè ki enskri
+✅ Aprouve oswa rejte nouvo enskripsyon
+✅ Bani itilizatè
+✅ Modifye plan abònman
+✅ Kreye ak pibliye kò
+✅ Ajoute videyo, dokiman, foto
+✅ Jere konteni ki disponib pou chak plan
+✅ Wè estatistik konplè
+
+AKSÈ RAPID:
+───────────
+- Dashboard Admin: http://localhost:3000/admin
+- Itilizatè: http://localhost:3000/admin/users
+- Kò: http://localhost:3000/admin/courses
+- Peman: http://localhost:3000/admin/payments (ap vini)
+
+═══════════════════════════════════════════════════════════════
+📋 WORKFLOW REKOMANDE
+═══════════════════════════════════════════════════════════════
+
+1. NOUVO ITILIZATÈ ENSKRI:
+   → Ale sou /admin/users
+   → Verifye itilizatè a
+   → Aprouve li (bouton vèt ✓)
+
+2. KREYE YON KÒ:
+   → Ale sou /admin/courses
+   → Kreye yon nouvo kò
+   → Ajoute modil ak leson
+   → Upload videyo/dokiman
+   → Pibliye kò a
+
+3. JERE PLAN:
+   → Ale sou /admin/users
+   → Filtre pa plan
+   → Modifye plan selon bezwen
+
+═══════════════════════════════════════════════════════════════
+⚠️ ENPÒTAN
+═══════════════════════════════════════════════════════════════
+
+1. Ou dwe konekte kòm ADMIN
+2. Kreye kont admin ou ak: CREER_ADMIN.bat
+3. Chanjman yo sove otomatikman
+4. Itilizatè yo wè chanjman yo imedyatman
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

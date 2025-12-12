@@ -1,0 +1,95 @@
+╔════════════════════════════════════════════════════════════════╗
+║   GUIDE - INSTALLATION DE GIT                                  ║
+╚════════════════════════════════════════════════════════════════╝
+
+✅ INSTALLATION DE GIT POUR GITHUB
+═══════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════════
+📥 ÉTAPE 1: TÉLÉCHARGER GIT
+═══════════════════════════════════════════════════════════════
+
+1. ALLEZ SUR:
+────────────────
+   → https://git-scm.com/download/win
+   → Ou exécutez: INSTALLER_GIT.bat
+
+2. TÉLÉCHARGEZ:
+────────────────
+   → Cliquez sur "Download for Windows"
+   → Le téléchargement commencera automatiquement
+
+═══════════════════════════════════════════════════════════════
+🔧 ÉTAPE 2: INSTALLER GIT
+═══════════════════════════════════════════════════════════════
+
+1. DOUBLE-CLIQUEZ SUR LE FICHIER TÉLÉCHARGÉ:
+─────────────────────────────────────────────
+   → Exemple: Git-2.xx.x-64-bit.exe
+
+2. SUIVEZ L'INSTALLATION:
+──────────────────────────
+   → Cliquez sur "Next" pour chaque étape
+   → Acceptez les options par défaut
+   → Laissez "Git from the command line and also from 3rd-party software" coché
+   → Cliquez sur "Install"
+
+3. ATTENDEZ LA FIN DE L'INSTALLATION:
+──────────────────────────────────────
+   → Cela peut prendre quelques minutes
+   → Cliquez sur "Finish" à la fin
+
+═══════════════════════════════════════════════════════════════
+🔄 ÉTAPE 3: REDÉMARRER
+═══════════════════════════════════════════════════════════════
+
+1. REDÉMARREZ VOTRE ORDINATEUR:
+────────────────────────────────
+   → Important pour que Git soit reconnu partout
+   → Fermez toutes les applications
+   → Redémarrez Windows
+
+2. VÉRIFIEZ L'INSTALLATION:
+───────────────────────────
+   → Ouvrez PowerShell ou CMD
+   → Exécutez: git --version
+   → Vous devriez voir: git version 2.xx.x
+
+═══════════════════════════════════════════════════════════════
+🚀 ÉTAPE 4: CONTINUER AVEC GITHUB
+═══════════════════════════════════════════════════════════════
+
+APRÈS LE REDÉMARRAGE:
+
+1. EXÉCUTEZ: HEBERGER_SUR_GITHUB.bat
+   → Le script va maintenant fonctionner
+
+2. SUIVEZ LES INSTRUCTIONS:
+   → Créez un dépôt sur GitHub
+   → Poussez votre code
+
+═══════════════════════════════════════════════════════════════
+📋 ALTERNATIVE: UTILISER GITHUB DESKTOP
+═══════════════════════════════════════════════════════════════
+
+Si vous préférez une interface graphique:
+
+1. TÉLÉCHARGEZ GITHUB DESKTOP:
+   → https://desktop.github.com
+   → Installez-le
+
+2. UTILISEZ GITHUB DESKTOP:
+   → Plus facile pour les débutants
+   → Interface graphique
+   → Pas besoin de ligne de commande
+
+═══════════════════════════════════════════════════════════════
+✅ TOUT EST PRÊT!
+═══════════════════════════════════════════════════════════════
+
+Installez Git, redémarrez, puis exécutez HEBERGER_SUR_GITHUB.bat!
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

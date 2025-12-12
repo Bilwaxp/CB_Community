@@ -1,0 +1,53 @@
+╔════════════════════════════════════════════════════════════════╗
+║   CB_COMMUNITY - BOUTONS GOOGLE REACTIVES                     ║
+╚════════════════════════════════════════════════════════════════╝
+
+✅ BOUTONS GOOGLE APARET OTOMATIKMAN!
+═══════════════════════════════════════════════════════════════
+
+CHANJMAN FÈ:
+────────────
+1. ✅ Bouton "Continuer avec Google" aparet nan paj login
+2. ✅ Bouton "S'inscrire avec Google" aparet nan paj enskripsyon
+3. ✅ Gestion d'erreur si Google pa konfigure
+4. ✅ Mesaj klè pou itilizatè si Google pa fonksyone
+
+KISA KI RIVE SI GOOGLE PA KONFIGURE:
+─────────────────────────────────────
+- Bouton Google ap parèt
+- Si itilizatè a klike, y ap jwenn yon mesaj:
+  "Google OAuth n'est pas configuré. Veuillez contacter l'administrateur 
+   ou utiliser email/mot de passe."
+- Pa gen erè teknik - tout bagay fonksyone byen
+
+POU KONFIGIRE GOOGLE (Si ou vle):
+──────────────────────────────────
+1. Double-cliquez sou: ACTIVER_GOOGLE.bat
+2. Swiv enstruksyon yo
+3. Jwenn Client ID ak Client Secret
+4. Antre yo nan script la
+5. Redemare serveur la
+6. Bouton Google ap fonksyone imedyatman!
+
+POU REDEMARE SÈVÈ A:
+─────────────────────
+1. Fèmen fenèt sèvè a (Ctrl+C)
+2. Double-cliquez sou: DEMARRER_MAINTENANT.bat
+3. Tann pou sèvè a demare
+4. Bouton Google ap parèt otomatikman!
+
+KISA KI FONKSYONE KOULYE A:
+───────────────────────────
+✅ Bouton Google aparet otomatikman nan login
+✅ Bouton Google aparet otomatikman nan enskripsyon
+✅ Si Google konfigure: fonksyone pafètman
+✅ Si Google pa konfigure: mesaj klè pou itilizatè
+✅ Pa gen erè teknik
+✅ Tout bagay fonksyone byen!
+
+═══════════════════════════════════════════════════════════════
+✅ BOUTONS GOOGLE REACTIVES - APARET OTOMATIKMAN!
+═══════════════════════════════════════════════════════════════
+
+© 2024 CB_Community
+

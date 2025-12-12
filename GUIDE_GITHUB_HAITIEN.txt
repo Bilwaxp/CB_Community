@@ -1,0 +1,142 @@
+╔════════════════════════════════════════════════════════════════╗
+║   GID - EBERJE SOU GITHUB                                      ║
+╚════════════════════════════════════════════════════════════════╝
+
+✅ METOD SENP (REKOMANDE)
+═══════════════════════════════════════════════════════════════
+
+1. EKZEKITE: HEBERGER_GITHUB_COMPLET.bat
+   → Script la ap fè tout otomatikman
+   → Ou dwe jis kreye depo a sou GitHub
+   → E antre URL la lè li mande
+
+═══════════════════════════════════════════════════════════════
+📥 ENSTALE GIT (SI NESESE)
+═══════════════════════════════════════════════════════════════
+
+Si Git pa enstale:
+
+1. TELE CHARJE GIT:
+   → https://git-scm.com/download/win
+   → Oswa ekzekite: INSTALLER_GIT.bat
+
+2. ENSTALE GIT:
+   → Double-klike sou dosye telechaje a
+   → Swiv enstriksyon yo
+   → Aksepte opsyon pa defo yo
+
+3. REDEMARE ORDINATÈ OU:
+   → Enpòtan pou Git ka rekonèt
+
+4. RELANCE SCRIPT LA:
+   → Ekzekite HEBERGER_GITHUB_COMPLET.bat ankò
+
+═══════════════════════════════════════════════════════════════
+🌐 KREYE DEPO A SOU GITHUB
+═══════════════════════════════════════════════════════════════
+
+1. ALE SOU: https://github.com/new
+
+2. RANPLI FÒMILÈ A:
+   → Repository name: CB_Community (oswa lòt non)
+   → Description: Sit entènèt CB_Community
+   → Visibilité: Public oswa Private
+   → PA koche "Initialize with README"
+   → PA koche "Add .gitignore"
+   → PA koche "Choose a license"
+
+3. KLIKE SOU "Create repository"
+
+4. KOPYE URL LA:
+   → Egzanp: https://github.com/NON_ITILIZATÈ_OU/CB_Community.git
+
+═══════════════════════════════════════════════════════════════
+🔐 KREYE YON TOKEN GITHUB
+═══════════════════════════════════════════════════════════════
+
+GitHub pa pèmèt ou itilize modpas ou ankò.
+Ou dwe kreye yon token aksè:
+
+1. ALE SOU: https://github.com/settings/tokens
+
+2. KLIKE SOU:
+   → "Generate new token" ^> "Generate new token (classic)"
+
+3. KONFIGIYE:
+   → Note: "CB_Community Access"
+   → Expiration: 90 jou (oswa plis)
+   → Permissions: repo (koche tout anba "repo")
+
+4. KLIKE SOU "Generate token"
+
+5. KOPYE TOKEN AN:
+   → ⚠️ ENPÒTAN: Kopye li kounye a!
+   → Ou p ap wè li ankò
+   → Itilize li kòm "modpas" lè w ap pouse
+
+═══════════════════════════════════════════════════════════════
+📤 ITILIZE SCRIPT OTOMATIK LA
+═══════════════════════════════════════════════════════════════
+
+1. EKZEKITE: HEBERGER_GITHUB_COMPLET.bat
+
+2. LÈ SCRIPT LA MANDE URL:
+   → Kole URL depo GitHub ou
+   → Egzanp: https://github.com/NON_ITILIZATÈ_OU/CB_Community.git
+
+3. LÈ GIT MANDE IDANTIFYAN OU:
+   → Username: NON_ITILIZATÈ_GITHUB_OU
+   → Password: TOKEN_GITHUB_OU (pa modpas ou!)
+
+4. TANNE:
+   → Kòd la ap pouse sou GitHub
+   → Ou ap wè "SUCCES!" nan fen an
+
+═══════════════════════════════════════════════════════════════
+✅ VERIFYE
+═══════════════════════════════════════════════════════════════
+
+Apre pouse a, ale sou depo GitHub ou:
+→ https://github.com/NON_ITILIZATÈ_OU/CB_Community
+
+Ou dwe wè tout dosye ou yo!
+
+═══════════════════════════════════════════════════════════════
+⚠️ ENPÒTAN
+═══════════════════════════════════════════════════════════════
+
+Dosye sa yo P AP sou GitHub:
+❌ .env (sekirite)
+❌ prisma/dev.db (baz done)
+❌ node_modules/ (depandans)
+❌ .next/ (konpilasyon)
+
+Tout lòt bagay ap sou GitHub!
+
+═══════════════════════════════════════════════════════════════
+📋 KOMAND MANYÈL (SI NESESE)
+═══════════════════════════════════════════════════════════════
+
+Si script la pa fonksyone, itilize kòmand sa yo:
+
+1. Lye depo a:
+   git remote add origin https://github.com/NON_ITILIZATÈ_OU/CB_Community.git
+
+2. Fè commit:
+   git commit -m "Initial commit - CB_Community"
+
+3. Chanje branch:
+   git branch -M main
+
+4. Pouse:
+   git push -u origin main
+
+═══════════════════════════════════════════════════════════════
+✅ TOUT BAGAY PRET!
+═══════════════════════════════════════════════════════════════
+
+Ekzekite HEBERGER_GITHUB_COMPLET.bat pou kòmanse!
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════

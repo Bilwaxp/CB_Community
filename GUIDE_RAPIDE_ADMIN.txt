@@ -1,0 +1,89 @@
+╔════════════════════════════════════════════════════════════════╗
+║   GUIDE RAPIDE - ADMINISTRATEUR                               ║
+╚════════════════════════════════════════════════════════════════╝
+
+🎯 ACCÈS ADMINISTRATEUR
+═══════════════════════════════════════════════════════════════
+
+1. Connectez-vous avec un compte ADMIN
+2. Allez sur: http://localhost:3000/admin
+3. Ou cliquez sur "Administration" dans le menu
+
+═══════════════════════════════════════════════════════════════
+👥 VOIR LES UTILISATEURS INSCRITS
+═══════════════════════════════════════════════════════════════
+
+URL: http://localhost:3000/admin/users
+
+✅ Liste complète de tous les utilisateurs
+✅ Recherche par nom ou email
+✅ Filtres par statut
+✅ Approuver/Bannir/Supprimer
+✅ Bouton "Actualiser" pour voir les nouveaux
+
+═══════════════════════════════════════════════════════════════
+📹 AJOUTER DES VIDÉOS
+═══════════════════════════════════════════════════════════════
+
+1. Allez sur: http://localhost:3000/admin/courses
+2. Cliquez sur "Nouveau cours"
+3. Remplissez les informations
+4. Créez le cours
+5. Cliquez sur "Leçons" ou "Ajouter une leçon"
+6. Choisissez "Vidéo"
+7. Entrez l'URL (YouTube, Vimeo, ou votre serveur)
+8. Sauvegardez
+
+═══════════════════════════════════════════════════════════════
+📄 AJOUTER DES DOCUMENTS/PHOTOS
+═══════════════════════════════════════════════════════════════
+
+1. Ouvrez un cours
+2. Cliquez sur "Ajouter une leçon"
+3. Choisissez le type:
+   - PDF pour documents
+   - Image pour photos
+   - Audio pour enregistrements
+4. Entrez l'URL du fichier
+5. Sauvegardez
+
+═══════════════════════════════════════════════════════════════
+💳 GÉRER LES PLANS
+═══════════════════════════════════════════════════════════════
+
+URL: http://localhost:3000/admin/plans
+
+✅ Voir tous les utilisateurs par plan
+✅ Modifier le plan d'un utilisateur (menu déroulant)
+✅ Statistiques par plan
+✅ Filtrer et rechercher
+
+═══════════════════════════════════════════════════════════════
+🎛️ CONTRÔLE COMPLET
+═══════════════════════════════════════════════════════════════
+
+VOUS POUVEZ:
+────────────
+✅ Voir tous les utilisateurs
+✅ Approuver/Bannir/Supprimer
+✅ Créer des cours
+✅ Ajouter vidéos/documents/photos
+✅ Modifier les plans
+✅ Publier/Dépublier du contenu
+✅ Contrôler qui accède à quoi
+
+═══════════════════════════════════════════════════════════════
+📋 MENU ADMIN
+═══════════════════════════════════════════════════════════════
+
+- Dashboard: Vue d'ensemble
+- Utilisateurs: Gestion des utilisateurs
+- Cours: Créer et gérer les cours
+- Plans: Gérer les abonnements
+- Paiements: Voir les transactions
+- Signaux: Gérer les signaux de trading
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

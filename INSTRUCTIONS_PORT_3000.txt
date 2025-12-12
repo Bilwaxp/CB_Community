@@ -1,0 +1,61 @@
+╔════════════════════════════════════════════════════════════════╗
+║   RÉSOLUTION - PORT 3000 DÉJÀ UTILISÉ                          ║
+╚════════════════════════════════════════════════════════════════╝
+
+✅ SOLUTION RAPIDE
+═══════════════════════════════════════════════════════════════
+
+1. EXÉCUTEZ: ARRETER_ET_REDEMARRER.bat
+   → Ce script arrête tous les processus Node.js
+   → Libère le port 3000
+   → Redémarre le serveur automatiquement
+
+2. OU EXÉCUTEZ: RESOUDRE_PORT_3000.bat
+   → Libère le port 3000 uniquement
+   → Puis relancez HEBERGER_SITE.bat
+
+═══════════════════════════════════════════════════════════════
+🔧 SOLUTION MANUELLE
+═══════════════════════════════════════════════════════════════
+
+1. OUVREZ LE GESTIONNAIRE DE TÂCHES:
+   → Appuyez sur Ctrl+Shift+Esc
+   → Allez dans l'onglet "Détails"
+   → Cherchez "node.exe"
+   → Cliquez droit > "Terminer la tâche"
+
+2. OU DANS LE TERMINAL:
+   → Ouvrez PowerShell en tant qu'administrateur
+   → Exécutez: taskkill /F /IM node.exe
+
+3. VÉRIFIEZ LE PORT:
+   → Exécutez: netstat -ano | findstr :3000
+   → Notez le PID (dernier nombre)
+   → Exécutez: taskkill /F /PID [NUMERO_PID]
+
+4. RELANCEZ LE SERVEUR:
+   → Exécutez HEBERGER_SITE.bat
+
+═══════════════════════════════════════════════════════════════
+📋 SCRIPTS DISPONIBLES
+═══════════════════════════════════════════════════════════════
+
+✅ ARRETER_ET_REDEMARRER.bat
+   → Arrête tout et redémarre (RECOMMANDÉ)
+
+✅ RESOUDRE_PORT_3000.bat
+   → Libère le port 3000 uniquement
+
+✅ HEBERGER_SITE.bat
+   → Hébergement complet (mise à jour avec libération du port)
+
+═══════════════════════════════════════════════════════════════
+✅ TOUT EST PRÊT!
+═══════════════════════════════════════════════════════════════
+
+Exécutez ARRETER_ET_REDEMARRER.bat pour résoudre le problème!
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

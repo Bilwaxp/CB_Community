@@ -1,0 +1,165 @@
+╔════════════════════════════════════════════════════════════════╗
+║   GUIDE DE DEMARRAGE RAPIDE - CB_COMMUNITY                   ║
+╚════════════════════════════════════════════════════════════════╝
+
+🚀 DEMARRAGE EN 3 ETAPES
+═══════════════════════════════════════════════════════════════
+
+ETAPE 1: PREMIERE FOIS (UNE SEULE FOIS)
+────────────────────────────────────────
+👉 Double-cliquez sur: FINALISER_TOUT.bat
+👉 Attendez que tout soit configuré (5-10 minutes)
+👉 Le script va:
+   ✅ Vérifier Node.js et npm
+   ✅ Installer les dépendances
+   ✅ Configurer la base de données
+   ✅ Compiler le projet
+   ✅ Tout préparer pour le démarrage
+
+ETAPE 2: VERIFIER (OPTIONNEL)
+──────────────────────────────
+👉 Double-cliquez sur: VERIFIER_TOUT.bat
+👉 Vérifie que tout est prêt
+👉 Corrige les problèmes détectés
+
+ETAPE 3: DEMARRER LE SERVEUR
+─────────────────────────────
+👉 Double-cliquez sur: DEMARRER_MAINTENANT.bat
+👉 Le serveur démarre automatiquement
+👉 Accédez à: http://localhost:3000
+
+═══════════════════════════════════════════════════════════════
+📋 SCRIPTS DISPONIBLES
+═══════════════════════════════════════════════════════════════
+
+🔧 CONFIGURATION
+────────────────
+✅ FINALISER_TOUT.bat
+   → Configure et prépare tout le site (première fois)
+
+✅ VERIFIER_TOUT.bat
+   → Vérifie que tout est correctement configuré
+
+✅ DEMARRER_MAINTENANT.bat
+   → Démarre le serveur de production
+
+🚀 DEMARRAGE
+────────────
+✅ DEMARRER_MAINTENANT.bat
+   → Démarre le serveur (mode production)
+
+✅ TESTER_SITE.bat
+   → Démarre en mode développement (pour tester)
+
+🔐 AUTHENTIFICATION
+───────────────────
+✅ GOOGLE_MAINTENANT.bat
+   → Configure Google OAuth
+
+✅ CREER_ADMIN.bat
+   → Crée un compte administrateur
+
+✅ ACTIVER_SANS_EMAIL.bat
+   → Active un compte utilisateur
+
+📧 EMAIL
+────────
+✅ RESOUDRE_EMAIL.bat
+   → Configure l'envoi d'emails
+
+🔍 DIAGNOSTIC
+─────────────
+✅ VERIFIER_GOOGLE.bat
+   → Vérifie la configuration Google OAuth
+
+✅ DIAGNOSTIC_ERREUR.bat
+   → Diagnostique les erreurs
+
+✅ VERIFIER_TOUT.bat
+   → Vérification complète du système
+
+💾 BASE DE DONNEES
+──────────────────
+✅ OUVRIR_BD.bat
+   → Ouvre Prisma Studio (interface graphique)
+
+✅ REPARER_DB.bat
+   → Répare les problèmes de base de données
+
+═══════════════════════════════════════════════════════════════
+⚙️ CONFIGURATION OPTIONNELLE
+═══════════════════════════════════════════════════════════════
+
+1. GOOGLE OAUTH (Optionnel)
+   → Exécutez: GOOGLE_MAINTENANT.bat
+   → Suivez les instructions
+   → Les utilisateurs pourront s'inscrire avec Google
+
+2. EMAIL SMTP (Optionnel)
+   → Exécutez: RESOUDRE_EMAIL.bat
+   → Configurez Gmail ou autre service SMTP
+   → Permet l'envoi d'emails de vérification
+
+3. CREER ADMIN (Recommandé)
+   → Exécutez: CREER_ADMIN.bat
+   → Créez un compte administrateur
+   → Accédez au panneau d'administration
+
+═══════════════════════════════════════════════════════════════
+🌐 ACCES AU SITE
+═══════════════════════════════════════════════════════════════
+
+APRES DEMARRAGE:
+────────────────
+✅ Local: http://localhost:3000
+✅ Réseau: http://VOTRE_IP:3000
+
+POUR TROUVER VOTRE IP:
+──────────────────────
+→ Exécutez: TROUVER_IP.bat
+→ Ou dans PowerShell: ipconfig
+
+POUR ACCES RESEAU:
+──────────────────
+→ Exécutez: CONFIGURER_FIREWALL.bat
+→ Ouvre le port 3000 dans le pare-feu Windows
+
+═══════════════════════════════════════════════════════════════
+❓ PROBLEMES COURANTS
+═══════════════════════════════════════════════════════════════
+
+PROBLEME: "Node.js n'est pas reconnu"
+SOLUTION: Installez Node.js depuis https://nodejs.org/
+          Redémarrez votre ordinateur après installation
+
+PROBLEME: "Port 3000 déjà utilisé"
+SOLUTION: Arrêtez les autres processus Node.js
+          Ou changez le port dans package.json
+
+PROBLEME: "Base de données non trouvée"
+SOLUTION: Exécutez: REPARER_DB.bat
+          Ou: FINALISER_TOUT.bat
+
+PROBLEME: "Erreur de compilation"
+SOLUTION: Exécutez: DIAGNOSTIC_ERREUR.bat
+          Vérifiez les erreurs TypeScript
+
+PROBLEME: "Site ne charge pas"
+SOLUTION: 1. Vérifiez que le serveur est démarré
+          2. Vérifiez le port 3000
+          3. Vérifiez le pare-feu
+          4. Exécutez: VERIFIER_TOUT.bat
+
+═══════════════════════════════════════════════════════════════
+📞 SUPPORT
+═══════════════════════════════════════════════════════════════
+
+Pour plus d'aide:
+→ Consultez: README.md
+→ Consultez: GUIDE_HEBERGEMENT.md
+→ Exécutez: DIAGNOSTIC_ERREUR.bat
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

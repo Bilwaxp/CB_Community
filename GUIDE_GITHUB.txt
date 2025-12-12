@@ -1,0 +1,148 @@
+╔════════════════════════════════════════════════════════════════╗
+║   GUIDE - HÉBERGEMENT SUR GITHUB                               ║
+╚════════════════════════════════════════════════════════════════╝
+
+✅ PRÉPARATION DU CODE POUR GITHUB
+═══════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════════
+🚀 ÉTAPE 1: PRÉPARER LE DÉPÔT
+═══════════════════════════════════════════════════════════════
+
+1. EXÉCUTEZ LE SCRIPT:
+──────────────────────
+   → Double-cliquez sur: HEBERGER_SUR_GITHUB.bat
+   → Le script va:
+     - Vérifier Git
+     - Initialiser le dépôt
+     - Créer .gitignore
+     - Préparer les fichiers
+
+═══════════════════════════════════════════════════════════════
+🌐 ÉTAPE 2: CRÉER LE DÉPÔT SUR GITHUB
+═══════════════════════════════════════════════════════════════
+
+1. ALLEZ SUR GITHUB:
+────────────────────
+   → https://github.com/new
+   → Connectez-vous à votre compte
+
+2. CRÉEZ UN NOUVEAU DÉPÔT:
+──────────────────────────
+   → Nom: CB_Community (ou autre nom)
+   → Description: Site web CB_Community
+   → Visibilité: Public ou Private
+   → NE cochez PAS "Initialize with README"
+   → Cliquez sur "Create repository"
+
+═══════════════════════════════════════════════════════════════
+📤 ÉTAPE 3: PUSHER LE CODE
+═══════════════════════════════════════════════════════════════
+
+1. OUVREZ UN TERMINAL DANS LE DOSSIER DU PROJET:
+─────────────────────────────────────────────────
+   → Clic droit dans le dossier > "Ouvrir dans le terminal"
+   → Ou PowerShell/CMD dans le dossier
+
+2. EXÉCUTEZ CES COMMANDES:
+──────────────────────────
+   
+   REM Lier le dépôt local à GitHub
+   git remote add origin https://github.com/VOTRE_USERNAME/VOTRE_DEPOT.git
+   
+   REM Faire le premier commit
+   git commit -m "Initial commit - CB_Community"
+   
+   REM Changer la branche en main
+   git branch -M main
+   
+   REM Pousser vers GitHub
+   git push -u origin main
+
+3. ENTRER VOS IDENTIFIANTS:
+───────────────────────────
+   → Nom d'utilisateur GitHub
+   → Token d'accès personnel (pas le mot de passe)
+
+═══════════════════════════════════════════════════════════════
+🔐 CRÉER UN TOKEN GITHUB
+═══════════════════════════════════════════════════════════════
+
+Si Git demande un mot de passe:
+
+1. ALLEZ SUR GITHUB:
+────────────────────
+   → https://github.com/settings/tokens
+   → Cliquez sur "Generate new token" > "Generate new token (classic)"
+
+2. CONFIGUREZ LE TOKEN:
+───────────────────────
+   → Note: "CB_Community Access"
+   → Expiration: 90 jours (ou plus)
+   → Permissions: repo (tout cocher sous "repo")
+   → Cliquez sur "Generate token"
+
+3. COPIEZ LE TOKEN:
+───────────────────
+   → Copiez le token (vous ne le reverrez plus!)
+   → Utilisez-le comme mot de passe lors du push
+
+═══════════════════════════════════════════════════════════════
+⚠️ IMPORTANT - CE QUI NE SERA PAS ENVOYÉ
+═══════════════════════════════════════════════════════════════
+
+Pour la sécurité, ces fichiers NE seront PAS sur GitHub:
+
+❌ .env (contient les clés secrètes)
+❌ prisma/dev.db (base de données)
+❌ node_modules/ (dépendances)
+❌ .next/ (build)
+
+✅ TOUT LE CODE SERA SUR GITHUB
+✅ Les autres peuvent cloner et installer
+
+═══════════════════════════════════════════════════════════════
+📋 FICHIERS CRÉÉS
+═══════════════════════════════════════════════════════════════
+
+✅ HEBERGER_SUR_GITHUB.bat
+   → Script pour préparer le dépôt Git
+
+✅ .gitignore
+   → Liste des fichiers à ignorer (mis à jour)
+
+═══════════════════════════════════════════════════════════════
+🌐 HÉBERGEMENT DU SITE (PAS GITHUB PAGES)
+═══════════════════════════════════════════════════════════════
+
+⚠️ ATTENTION: GitHub Pages ne peut PAS héberger Next.js avec:
+   - API routes
+   - Base de données
+   - Authentification serveur
+
+POUR HÉBERGER LE SITE EN LIGNE, UTILISEZ:
+
+1. VERCEL (RECOMMANDÉ):
+   → https://vercel.com
+   → Connectez votre dépôt GitHub
+   → Déploiement automatique
+
+2. NETLIFY:
+   → https://netlify.com
+   → Connectez votre dépôt GitHub
+   → Déploiement automatique
+
+3. VPS/SERVEUR:
+   → Votre serveur actuel (laptop)
+   → Ou un serveur cloud (AWS, DigitalOcean, etc.)
+
+═══════════════════════════════════════════════════════════════
+✅ TOUT EST PRÊT!
+═══════════════════════════════════════════════════════════════
+
+Exécutez HEBERGER_SUR_GITHUB.bat pour commencer!
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

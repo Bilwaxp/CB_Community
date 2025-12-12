@@ -1,0 +1,104 @@
+╔════════════════════════════════════════════════════════════════╗
+║   GUIDE: ACCÉLÉRER LE DÉMARRAGE                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+⏱️ LE SERVEUR PREND TROP DE TEMPS?
+═══════════════════════════════════════════════════════════════
+
+Si le démarrage prend trop de temps, voici les solutions:
+
+═══════════════════════════════════════════════════════════════
+✅ SOLUTION 1: MODE DÉVELOPPEMENT (PLUS RAPIDE)
+═══════════════════════════════════════════════════════════════
+
+👉 Utilisez: DEMARRER_RAPIDE.bat
+
+Ce mode:
+✅ Démarre en 10-30 secondes (au lieu de 2-5 minutes)
+✅ Compile seulement les pages nécessaires
+✅ Recharge automatiquement quand vous modifiez le code
+✅ Parfait pour le développement et les tests
+
+ATTENTION: Moins optimisé que le mode production
+           Utilisez-le pour tester rapidement
+
+═══════════════════════════════════════════════════════════════
+✅ SOLUTION 2: MODE PRODUCTION (OPTIMISÉ)
+═══════════════════════════════════════════════════════════════
+
+👉 Utilisez: DEMARRER_SIMPLE.bat
+
+Ce mode:
+✅ Compile tout le projet une fois
+✅ Plus rapide après la première compilation
+✅ Optimisé pour la production
+✅ Meilleures performances
+
+ATTENTION: Prend 2-5 minutes la première fois
+           Ensuite, c'est rapide si .next existe
+
+═══════════════════════════════════════════════════════════════
+📋 COMPARAISON
+═══════════════════════════════════════════════════════════════
+
+MODE DÉVELOPPEMENT (DEMARRER_RAPIDE.bat):
+─────────────────────────────────────────
+⏱️  Démarrage: 10-30 secondes
+🔄  Rechargement: Automatique (rapide)
+📦  Compilation: Seulement les pages nécessaires
+🎯  Usage: Développement, tests rapides
+⚠️  Performance: Moins optimisé
+
+MODE PRODUCTION (DEMARRER_SIMPLE.bat):
+───────────────────────────────────────
+⏱️  Démarrage: 2-5 minutes (première fois)
+⏱️  Démarrage: 10-30 secondes (si .next existe)
+🔄  Rechargement: Nécessite redémarrage
+📦  Compilation: Tout le projet
+🎯  Usage: Production, hébergement
+✅  Performance: Optimisé
+
+═══════════════════════════════════════════════════════════════
+💡 CONSEILS POUR ACCÉLÉRER
+═══════════════════════════════════════════════════════════════
+
+1. PREMIÈRE FOIS:
+   → Utilisez DEMARRER_RAPIDE.bat (plus rapide)
+   → Testez votre site rapidement
+
+2. APRÈS PREMIÈRE COMPILATION:
+   → Si .next existe, DEMARRER_SIMPLE.bat est rapide
+   → Utilisez-le pour la production
+
+3. POUR DÉVELOPPER:
+   → Toujours utiliser DEMARRER_RAPIDE.bat
+   → Les changements se rechargent automatiquement
+
+4. POUR HÉBERGER:
+   → Utilisez DEMARRER_SIMPLE.bat
+   → Meilleures performances
+
+═══════════════════════════════════════════════════════════════
+🚀 DÉMARRAGE ULTRA-RAPIDE
+═══════════════════════════════════════════════════════════════
+
+Si vous avez déjà tout configuré:
+
+1. Ouvrez PowerShell dans le dossier CB_ONE
+2. Tapez: npm run dev
+3. Le serveur démarre en 10-20 secondes!
+
+═══════════════════════════════════════════════════════════════
+⚠️ SI ÇA PREND ENCORE TROP DE TEMPS
+═══════════════════════════════════════════════════════════════
+
+Vérifiez:
+1. Votre connexion internet (pour npm install)
+2. Votre processeur (compilation intensive)
+3. Votre antivirus (peut ralentir)
+4. Les autres programmes ouverts
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

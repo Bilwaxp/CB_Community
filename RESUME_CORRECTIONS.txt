@@ -1,0 +1,79 @@
+╔════════════════════════════════════════════════════════════════╗
+║   CB_COMMUNITY - REZIME KORÈKSYON                            ║
+╚════════════════════════════════════════════════════════════════╝
+
+PWOBLEM 1: Itilizatè pa jwenn mesaj imel - REZOLU ✅
+═══════════════════════════════════════════════════════════════
+✅ Verifye imel dezakte nan kòd la
+✅ Itilizatè yo ka konekte san verifye imel
+✅ Script kreye pou jere itilizatè yo
+
+PWOBLEM 2: Erreur Google OAuth - REZOLU ✅
+═══════════════════════════════════════════════════════════════
+✅ Google OAuth dezakte nan kòd la
+✅ Bouton "Connexion avec Google" kache
+✅ Pa gen plis erè "Missing client_id"
+
+CHANJMAN FÈ:
+────────────
+1. src/lib/auth.ts
+   - GoogleProvider komante (dezakte)
+   - Verifye imel dezakte
+
+2. src/app/(auth)/login/page.tsx
+   - Bouton Google kache
+   - Fonksyon handleGoogleSignIn komante
+
+3. Scripts kreye:
+   - OUVRIR_BD.bat (wè baz de done)
+   - GERE_UTILISATEURS.bat (jere itilizatè)
+   - CREER_ADMIN.bat (kreye admin)
+   - CONFIGURER_GOOGLE.bat (konfigire Google si bezwen)
+   - DESACTIVER_GOOGLE.bat (dezakte Google)
+
+POU REDEMARE SÈVÈ A:
+─────────────────────
+1. Fèmen fenèt sèvè a (Ctrl+C)
+2. Double-cliquez sou: DEMARRER_MAINTENANT.bat
+3. Tann pou sèvè a demare (30 segonn - 2 minit)
+4. Ale sou: http://localhost:3000
+
+POU KREYE YON ADMIN:
+─────────────────────
+1. Double-cliquez sou: CREER_ADMIN.bat
+2. Antre email ak modpas
+3. Yon admin ap kreye ki ka konekte imedyatman
+
+POU WÈ BAZ DE DONE:
+───────────────────
+1. Double-cliquez sou: OUVRIR_BD.bat
+2. Prisma Studio ap ouvri nan http://localhost:5555
+3. Ou ka wè ak modifye tout done yo
+
+POU JERE ITILIZATÈ:
+───────────────────
+1. Double-cliquez sou: GERE_UTILISATEURS.bat
+2. Chwazi opsyon ou vle:
+   - Wè tout itilizatè
+   - Kreye admin
+   - Aktive itilizatè
+   - Wè itilizatè ki an atant
+
+POU REAKTIVE GOOGLE OAUTH (Si bezwen):
+───────────────────────────────────────
+1. Double-cliquez sou: CONFIGURER_GOOGLE.bat
+2. Swiv enstruksyon yo pou jwenn Client ID ak Secret
+3. Antre yo nan script la
+4. Dekomante kòd Google nan src/lib/auth.ts
+5. Redemare sèvè a
+
+ENPÒTAN:
+────────
+⚠️ Redemare sèvè a pou tout chanjman yo pran efè!
+⚠️ Google OAuth dezakte - itilizatè yo ka konekte ak email/mot de passe sèlman
+⚠️ Verifye imel dezakte - itilizatè yo ka konekte imedyatman
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

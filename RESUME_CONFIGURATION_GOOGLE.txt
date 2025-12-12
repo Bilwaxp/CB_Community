@@ -1,0 +1,52 @@
+╔════════════════════════════════════════════════════════════════╗
+║   CONFIGURATION GOOGLE OAUTH - RESUME                         ║
+╚════════════════════════════════════════════════════════════════╝
+
+🎯 OBJECTIF: Configurer Google OAuth pour que les utilisateurs
+   puissent s'inscrire et se connecter avec leurs comptes Google.
+
+📝 ETAPES EN 5 MINUTES:
+═══════════════════════════════════════════════════════════════
+
+1. Allez sur: https://console.cloud.google.com/
+2. Créez un projet nommé "CB_Community"
+3. Activez "Google Identity Services API"
+4. Créez "OAuth 2.0 Client ID" (Application Web)
+5. Ajoutez les URLs de redirection:
+   - http://localhost:3000/api/auth/callback/google
+   - http://127.0.0.1:3000/api/auth/callback/google
+   - http://192.168.1.51:3000/api/auth/callback/google
+6. Copiez Client ID et Client Secret
+7. Exécutez: CONFIGURER_GOOGLE_RAPIDE.bat
+8. Collez les identifiants
+9. Redémarrez le serveur
+10. Testez!
+
+📚 GUIDES DISPONIBLES:
+═══════════════════════════════════════════════════════════════
+
+✅ INSTRUCTIONS_GOOGLE_SIMPLE.txt
+   → Guide simple et rapide
+
+✅ GUIDE_GOOGLE_VISUEL.txt
+   → Guide détaillé avec explications
+
+✅ CONFIGURER_GOOGLE_ETAPE_PAR_ETAPE.bat
+   → Script guidé étape par étape
+
+✅ CONFIGURER_GOOGLE_RAPIDE.bat
+   → Configuration rapide (si vous avez déjà les identifiants)
+
+🚀 APRES CONFIGURATION:
+═══════════════════════════════════════════════════════════════
+
+✅ Boutons Google apparaissent automatiquement
+✅ Tous les comptes Google de l'utilisateur s'affichent
+✅ L'utilisateur peut choisir n'importe quel compte
+✅ Inscription/connexion automatique
+✅ Compte activé immédiatement
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

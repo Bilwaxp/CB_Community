@@ -1,0 +1,37 @@
+========================================
+  POUR LANCER LE SITE
+========================================
+
+Double-cliquez sur: GO.bat
+
+OU
+
+Double-cliquez sur: LANCER_SITE_COMPLET.bat
+
+========================================
+  LE SITE SERA ACCESSIBLE SUR:
+========================================
+
+http://localhost:3000
+
+========================================
+  TOUT EST DEJA CONFIGURE:
+========================================
+
+✅ Base de données créée
+✅ Prisma configuré
+✅ Email configuré (cbcommunity7@gmail.com)
+✅ Toutes les erreurs corrigées
+✅ Site prêt à fonctionner
+
+========================================
+  POUR ARRETER LE SERVEUR:
+========================================
+
+Fermez la fenêtre du serveur ou appuyez sur Ctrl+C
+
+========================================
+
+
+
+

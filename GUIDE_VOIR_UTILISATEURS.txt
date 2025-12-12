@@ -1,0 +1,99 @@
+╔════════════════════════════════════════════════════════════════╗
+║   GUIDE: VOIR LES UTILISATEURS INSCRITS                        ║
+╚════════════════════════════════════════════════════════════════╝
+
+👥 COMMENT VOIR LES UTILISATEURS QUI SE SONT INSCRITS
+═══════════════════════════════════════════════════════════════
+
+ETAPE 1: CONNEXION EN TANT QU'ADMINISTRATEUR
+─────────────────────────────────────────────
+
+1. Allez sur: http://localhost:3000/login
+2. Connectez-vous avec votre compte administrateur
+3. Si vous n'avez pas de compte admin:
+   → Exécutez: CREER_ADMIN.bat
+   → Créez un compte administrateur
+
+ETAPE 2: ACCÉDER AU PANEL D'ADMINISTRATION
+──────────────────────────────────────────
+
+1. Après connexion, vous serez redirigé vers /dashboard
+2. Dans le menu, cliquez sur "Administration"
+3. Ou allez directement sur: http://localhost:3000/admin
+
+ETAPE 3: VOIR LES UTILISATEURS
+───────────────────────────────
+
+1. Dans le menu d'administration, cliquez sur "Utilisateurs"
+2. Ou allez directement sur: http://localhost:3000/admin/users
+3. Vous verrez tous les utilisateurs inscrits
+
+═══════════════════════════════════════════════════════════════
+📋 INFORMATIONS AFFICHÉES
+═══════════════════════════════════════════════════════════════
+
+Pour chaque utilisateur, vous verrez:
+
+✅ Nom et prénom
+✅ Email
+✅ Statut (En attente / Approuvé / Banni)
+✅ Plan (Basic / Pro / VIP)
+✅ Date d'inscription
+✅ Dernière connexion
+
+═══════════════════════════════════════════════════════════════
+🔍 FONCTIONNALITÉS
+═══════════════════════════════════════════════════════════════
+
+✅ Recherche: Tapez dans la barre de recherche pour trouver
+   un utilisateur par nom ou email
+
+✅ Filtres: Cliquez sur les boutons pour filtrer par statut:
+   - Tous
+   - En attente
+   - Approuvés
+   - Bannis
+
+✅ Statistiques: En haut de la page, vous verrez:
+   - Total d'utilisateurs
+   - Nombre en attente
+   - Nombre approuvés
+   - Nombre bannis
+
+✅ Actualiser: Cliquez sur "Actualiser" pour voir les
+   nouveaux utilisateurs qui se sont inscrits
+
+═══════════════════════════════════════════════════════════════
+⚙️ ACTIONS DISPONIBLES
+═══════════════════════════════════════════════════════════════
+
+Pour les utilisateurs en attente:
+✅ Approuver: Cliquez sur le bouton vert ✓
+✅ Rejeter: Cliquez sur le bouton rouge ✗
+
+Pour les utilisateurs approuvés:
+✅ Voir les détails
+✅ Modifier le statut
+
+═══════════════════════════════════════════════════════════════
+🔗 URLS DIRECTES
+═══════════════════════════════════════════════════════════════
+
+✅ Page d'administration: http://localhost:3000/admin
+✅ Liste des utilisateurs: http://localhost:3000/admin/users
+✅ Utilisateurs en attente: http://localhost:3000/admin/users?status=pending
+
+═══════════════════════════════════════════════════════════════
+⚠️ IMPORTANT
+═══════════════════════════════════════════════════════════════
+
+1. Vous devez être connecté en tant qu'administrateur
+2. Si vous n'avez pas de compte admin:
+   → Exécutez: CREER_ADMIN.bat
+3. Les utilisateurs apparaissent automatiquement après inscription
+4. Cliquez sur "Actualiser" pour voir les nouveaux utilisateurs
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

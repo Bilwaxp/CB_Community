@@ -1,0 +1,77 @@
+╔════════════════════════════════════════════════════════════════╗
+║   CB_COMMUNITY - ENSTRUKSYON POU GOOGLE OAUTH                 ║
+╚════════════════════════════════════════════════════════════════╝
+
+PWOBLEM: Erreur "Missing required parameter: client_id"
+═══════════════════════════════════════════════════════════════
+
+SOLISYON 1: Dezakte Google OAuth (TEMPORÈ - REKOMANDE)
+────────────────────────────────────────────────────────
+1. Mwen deja dezakte Google OAuth nan kòd la
+2. Bouton "Connexion avec Google" pa ap parèt ankò
+3. Itilizatè yo ka konekte ak email/mot de passe sèlman
+4. Redemare sèvè a pou chanjman yo pran efè
+
+SOLISYON 2: Konfigire Google OAuth (Si ou vle aktive li)
+───────────────────────────────────────────────────────────
+1. Double-cliquez sou: CONFIGURER_GOOGLE.bat
+2. Swiv enstruksyon yo pou kreye yon pwojè Google Cloud
+3. Jwenn Client ID ak Client Secret
+4. Antre yo nan script la
+
+ETAP DETAYE POU KONFIGIRE GOOGLE:
+──────────────────────────────────
+
+ETAPE 1: Kreye yon pwojè Google Cloud
+   1. Ale sou: https://console.cloud.google.com/
+   2. Klike sou "Nouveau projet" (New Project)
+   3. Bay yon non pwojè a (egzanp: CB_Community)
+   4. Klike sou "Créer" (Create)
+
+ETAPE 2: Aktive API a
+   1. Nan meni a, ale nan "APIs et services" > "Bibliothèque"
+   2. Chèche "Google+ API" oswa "Google Identity"
+   3. Klike sou "Activer" (Enable)
+
+ETAPE 3: Kreye identifikasyon OAuth
+   1. Ale nan "APIs et services" > "Identifiants"
+   2. Klike sou "Créer des identifiants" > "ID client OAuth"
+   3. Tip aplikasyon: Application Web
+   4. Non: CB_Community
+   5. URIs de redirection autorisées:
+      - http://localhost:3000/api/auth/callback/google
+      - http://VOTRE_IP:3000/api/auth/callback/google
+   6. Klike sou "Créer" (Create)
+   7. KOPYE Client ID ak Client Secret
+
+ETAPE 4: Konfigire nan .env
+   1. Double-cliquez sou: CONFIGURER_GOOGLE.bat
+   2. Antre Client ID ak Client Secret
+   3. Script la ap mete ajou .env otomatikman
+
+ETAPE 5: Reaktive nan kòd la
+   1. Ouvri src\lib\auth.ts
+   2. Dekomante (decommenter) liy GoogleProvider
+   3. Redemare sèvè a
+
+POU DEZAKTE GOOGLE (Si ou pa vle li):
+───────────────────────────────────────
+1. Double-cliquez sou: DESACTIVER_GOOGLE.bat
+2. Script la ap dezakte Google OAuth nan kòd la
+3. Redemare sèvè a
+
+POU REZIME:
+───────────
+✅ Google OAuth deja dezakte nan kòd la
+✅ Bouton Google pa ap parèt nan paj login
+✅ Itilizatè yo ka konekte ak email/mot de passe
+✅ Redemare sèvè a pou chanjman yo pran efè
+
+Si ou vle aktive Google OAuth:
+   → Double-cliquez sou: CONFIGURER_GOOGLE.bat
+   → Swiv enstruksyon yo
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

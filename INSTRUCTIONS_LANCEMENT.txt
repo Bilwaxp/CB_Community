@@ -1,0 +1,91 @@
+╔════════════════════════════════════════════════════════════════╗
+║   INSTRUCTIONS - LANCEMENT DU SITE                             ║
+╚════════════════════════════════════════════════════════════════╝
+
+Si FINALISER_ET_HEBERGER.bat ne fonctionne pas, utilisez:
+
+═══════════════════════════════════════════════════════════════
+🚀 MÉTHODE 1: LANCER_FINAL.bat (RECOMMANDÉ)
+═══════════════════════════════════════════════════════════════
+
+1. Double-cliquez sur: LANCER_FINAL.bat
+2. Attendez que le script termine
+3. Le serveur démarrera automatiquement
+4. Accédez à: http://localhost:3000
+
+═══════════════════════════════════════════════════════════════
+🚀 MÉTHODE 2: DEMARRER_SIMPLE.bat
+═══════════════════════════════════════════════════════════════
+
+1. Double-cliquez sur: DEMARRER_SIMPLE.bat
+2. Attendez que le script termine
+3. Le serveur démarrera automatiquement
+
+═══════════════════════════════════════════════════════════════
+🚀 MÉTHODE 3: MANUEL (Si les scripts ne fonctionnent pas)
+═══════════════════════════════════════════════════════════════
+
+1. Ouvrez PowerShell ou CMD dans le dossier du projet
+2. Exécutez ces commandes une par une:
+
+   npm install
+   npx prisma generate
+   npx prisma db push
+   npm run build
+   npm start
+
+3. Attendez que le serveur démarre
+4. Accédez à: http://localhost:3000
+
+═══════════════════════════════════════════════════════════════
+🔧 SI VOUS AVEZ DES ERREURS
+═══════════════════════════════════════════════════════════════
+
+ERREUR: "Node.js n'est pas installé"
+→ Téléchargez Node.js depuis: https://nodejs.org/
+→ Installez-le et redémarrez votre ordinateur
+
+ERREUR: "npm n'est pas reconnu"
+→ Réinstallez Node.js
+→ Vérifiez que Node.js est dans le PATH
+
+ERREUR: "Cannot find module"
+→ Exécutez: npm install
+→ Attendez la fin de l'installation
+
+ERREUR: "Prisma error"
+→ Exécutez: npx prisma generate
+→ Puis: npx prisma db push
+
+ERREUR: "Build failed"
+→ Vérifiez les erreurs affichées
+→ Corrigez les erreurs TypeScript/ESLint
+→ Réessayez: npm run build
+
+═══════════════════════════════════════════════════════════════
+📝 SCRIPTS DISPONIBLES
+═══════════════════════════════════════════════════════════════
+
+✅ LANCER_FINAL.bat
+   → Script simple et rapide (RECOMMANDÉ)
+
+✅ DEMARRER_SIMPLE.bat
+   → Script de démarrage simple
+
+✅ FINALISER_ET_HEBERGER.bat
+   → Script complet (peut être plus lent)
+
+✅ HEBERGER_FINAL.bat
+   → Script d'hébergement de production
+
+═══════════════════════════════════════════════════════════════
+✅ TOUT EST PRÊT!
+═══════════════════════════════════════════════════════════════
+
+Essayez LANCER_FINAL.bat en premier.
+Si ça ne fonctionne pas, utilisez la méthode manuelle.
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

@@ -1,0 +1,73 @@
+╔════════════════════════════════════════════════════════════════╗
+║   ERREUR: ERR_CONNECTION_REFUSED - SOLUTION                   ║
+╚════════════════════════════════════════════════════════════════╝
+
+❌ PROBLÈME
+═══════════════════════════════════════════════════════════════
+
+"localhost a refusé de se connecter"
+"ERR_CONNECTION_REFUSED"
+
+Cela signifie que le serveur n'est PAS démarré.
+
+═══════════════════════════════════════════════════════════════
+✅ SOLUTION IMMEDIATE
+═══════════════════════════════════════════════════════════════
+
+👉 Double-cliquez sur: LANCER_SITE.bat
+
+Ce script va:
+1. Arrêter les processus existants
+2. Vérifier la configuration
+3. Compiler le projet (si nécessaire)
+4. Démarrer le serveur automatiquement
+
+Attendez 2-5 minutes, puis ouvrez:
+→ http://localhost:3000
+
+═══════════════════════════════════════════════════════════════
+📋 SCRIPTS DISPONIBLES
+═══════════════════════════════════════════════════════════════
+
+✅ LANCER_SITE.bat (RECOMMANDÉ)
+   → Fait tout automatiquement
+   → Compile et démarre le serveur
+
+✅ RESOUDRE_CONNEXION.bat
+   → Diagnostique et résout tous les problèmes
+   → Guide étape par étape
+
+✅ DEMARRER_MAINTENANT.bat
+   → Démarre le serveur (si déjà compilé)
+
+✅ COMMENCER_ICI.bat
+   → Menu principal
+   → Option 3 pour démarrer
+
+═══════════════════════════════════════════════════════════════
+⚠️ IMPORTANT
+═══════════════════════════════════════════════════════════════
+
+1. Le serveur doit être DÉMARRÉ pour accéder au site
+2. Ne fermez PAS la fenêtre du serveur
+3. Attendez que "Ready" apparaisse avant d'ouvrir le navigateur
+4. Le serveur doit rester ouvert en arrière-plan
+
+═══════════════════════════════════════════════════════════════
+🔍 VERIFICATION
+═══════════════════════════════════════════════════════════════
+
+Pour vérifier que le serveur fonctionne:
+
+✅ Console affiche "Ready" ou "started server"
+✅ Pas d'erreurs en rouge dans la console
+✅ http://localhost:3000 charge la page
+
+Si ça ne fonctionne pas:
+→ Exécutez: RESOUDRE_CONNEXION.bat
+→ Ou: DIAGNOSTIC_ERREUR.bat
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

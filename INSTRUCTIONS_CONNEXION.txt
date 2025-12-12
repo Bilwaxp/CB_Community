@@ -1,0 +1,100 @@
+╔════════════════════════════════════════════════════════════════╗
+║   RESOLUTION ERREUR: ERR_CONNECTION_REFUSED                   ║
+╚════════════════════════════════════════════════════════════════╝
+
+❌ ERREUR: "localhost a refusé de se connecter"
+═══════════════════════════════════════════════════════════════
+
+Cette erreur signifie que le serveur n'est pas démarré.
+
+═══════════════════════════════════════════════════════════════
+✅ SOLUTION RAPIDE
+═══════════════════════════════════════════════════════════════
+
+1. Double-cliquez sur: LANCER_SITE.bat
+2. Attendez que le serveur démarre (2-5 minutes)
+3. Quand vous voyez "Ready" dans la console
+4. Ouvrez: http://localhost:3000
+
+═══════════════════════════════════════════════════════════════
+🔧 AUTRES SOLUTIONS
+═══════════════════════════════════════════════════════════════
+
+OPTION 1: Script automatique
+────────────────────────────
+👉 LANCER_SITE.bat
+   → Fait tout automatiquement (recommandé)
+
+OPTION 2: Résolution complète
+──────────────────────────────
+👉 RESOUDRE_CONNEXION.bat
+   → Diagnostique et résout tous les problèmes
+
+OPTION 3: Démarrage manuel
+───────────────────────────
+👉 DEMARRER_SERVEUR.bat
+   → Démarre le serveur (si déjà compilé)
+
+OPTION 4: Menu principal
+─────────────────────────
+👉 COMMENCER_ICI.bat
+   → Choisissez option 3 (Démarrer)
+
+═══════════════════════════════════════════════════════════════
+📋 VERIFICATION
+═══════════════════════════════════════════════════════════════
+
+Pour vérifier que le serveur fonctionne:
+
+1. Vérifiez la console:
+   ✅ Vous devriez voir "Ready" ou "started server"
+   ✅ Pas d'erreurs en rouge
+
+2. Vérifiez le navigateur:
+   ✅ http://localhost:3000 devrait charger
+   ✅ Vous devriez voir la page d'accueil
+
+3. Si ça ne fonctionne pas:
+   → Exécutez: RESOUDRE_CONNEXION.bat
+   → Ou: DIAGNOSTIC_ERREUR.bat
+
+═══════════════════════════════════════════════════════════════
+⚠️ PROBLEMES COURANTS
+═══════════════════════════════════════════════════════════════
+
+PROBLÈME: "Port 3000 déjà utilisé"
+SOLUTION: Le script arrête automatiquement les processus
+          Si le problème persiste:
+          → Fermez toutes les fenêtres Node.js
+          → Redémarrez votre ordinateur
+
+PROBLÈME: "Build non trouvé"
+SOLUTION: Le script compile automatiquement
+          Si la compilation échoue:
+          → Exécutez: DIAGNOSTIC_ERREUR.bat
+          → Vérifiez les erreurs TypeScript
+
+PROBLÈME: "Base de données non trouvée"
+SOLUTION: Le script crée automatiquement la base
+          Si ça échoue:
+          → Exécutez: REPARER_DB.bat
+
+PROBLÈME: "Node.js non trouvé"
+SOLUTION: Installez Node.js depuis https://nodejs.org/
+          Redémarrez votre ordinateur après installation
+
+═══════════════════════════════════════════════════════════════
+✅ APRES DEMARRAGE
+═══════════════════════════════════════════════════════════════
+
+Une fois le serveur démarré:
+
+✅ Ne fermez PAS la fenêtre du serveur
+✅ Gardez-la ouverte en arrière-plan
+✅ Accédez à: http://localhost:3000
+✅ Pour arrêter: Appuyez sur Ctrl+C dans la fenêtre
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

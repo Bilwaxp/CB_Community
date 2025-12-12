@@ -1,0 +1,131 @@
+╔════════════════════════════════════════════════════════════════╗
+║   RÉSOLUTION: "Une erreur est survenue" avec Google          ║
+╚════════════════════════════════════════════════════════════════╝
+
+❌ PROBLÈME
+═══════════════════════════════════════════════════════════════
+
+Quand vous cliquez sur "Continuer avec Google", vous voyez:
+"Une erreur est survenue"
+
+═══════════════════════════════════════════════════════════════
+✅ SOLUTIONS (DANS L'ORDRE)
+═══════════════════════════════════════════════════════════════
+
+SOLUTION 1: REDÉMARRER LE SERVEUR (LE PLUS IMPORTANT!)
+───────────────────────────────────────────────────────────────
+
+Si vous venez de configurer Google OAuth, vous DEVEZ redémarrer
+le serveur pour que les changements prennent effet.
+
+1. Fermez la fenêtre du serveur (Ctrl+C)
+2. Attendez 2-3 secondes
+3. Double-cliquez sur: DEMARRER_SIMPLE.bat
+4. Attendez que le serveur démarre
+5. Testez à nouveau le bouton Google
+
+C'est la cause la plus fréquente!
+
+SOLUTION 2: VÉRIFIER LES IDENTIFIANTS
+───────────────────────────────────────
+
+1. Ouvrez le fichier .env
+2. Vérifiez que vous avez:
+   GOOGLE_CLIENT_ID=votre_client_id_ici
+   GOOGLE_CLIENT_SECRET=votre_client_secret_ici
+
+3. Vérifiez qu'il n'y a PAS d'espaces avant/après les =
+4. Vérifiez qu'il n'y a PAS de guillemets autour des valeurs
+5. Redémarrez le serveur après modification
+
+SOLUTION 3: VÉRIFIER LES URLs DE REDIRECTION
+─────────────────────────────────────────────
+
+Dans Google Cloud Console, vous DEVEZ avoir ces URLs:
+
+✅ http://localhost:3000/api/auth/callback/google
+✅ http://127.0.0.1:3000/api/auth/callback/google
+
+Pour trouver votre IP locale:
+→ Exécutez: TROUVER_IP.bat
+→ Ajoutez aussi: http://VOTRE_IP:3000/api/auth/callback/google
+
+IMPORTANT: Les URLs doivent être EXACTEMENT comme ci-dessus,
+sans slash à la fin!
+
+SOLUTION 4: VÉRIFIER QUE L'API EST ACTIVÉE
+───────────────────────────────────────────
+
+Dans Google Cloud Console:
+1. Allez dans "APIs et services" > "Bibliothèque"
+2. Recherchez "Google Identity Services API"
+3. Vérifiez qu'elle est ACTIVÉE
+4. Si non, cliquez sur "ACTIVER"
+
+SOLUTION 5: RECONFIGURER GOOGLE OAUTH
+──────────────────────────────────────
+
+Si rien ne fonctionne, reconfigurez depuis le début:
+
+1. Exécutez: GOOGLE_MAINTENANT.bat
+2. Suivez les instructions étape par étape
+3. Copiez EXACTEMENT les identifiants
+4. Redémarrez le serveur
+
+═══════════════════════════════════════════════════════════════
+🔍 VÉRIFICATION RAPIDE
+═══════════════════════════════════════════════════════════════
+
+Exécutez: VERIFIER_ET_CONFIGURER_GOOGLE.bat
+
+Ce script va:
+✅ Vérifier si Google OAuth est configuré
+✅ Vous dire exactement ce qui manque
+✅ Vous guider pour la configuration
+
+═══════════════════════════════════════════════════════════════
+⚠️ ERREURS COURANTES
+═══════════════════════════════════════════════════════════════
+
+ERREUR: "redirect_uri_mismatch"
+SOLUTION: Vérifiez que toutes les URLs de redirection sont
+          ajoutées dans Google Console (voir Solution 3)
+
+ERREUR: "invalid_client"
+SOLUTION: Vérifiez que Client ID et Secret sont corrects
+          dans .env (voir Solution 2)
+
+ERREUR: "access_denied"
+SOLUTION: L'utilisateur a annulé l'autorisation
+          Réessayez et acceptez l'autorisation
+
+ERREUR: "Une erreur est survenue" (générique)
+SOLUTION: 
+  1. Redémarrez le serveur (Solution 1)
+  2. Vérifiez la console du serveur pour plus de détails
+  3. Vérifiez les identifiants (Solution 2)
+
+═══════════════════════════════════════════════════════════════
+💡 ALTERNATIVE TEMPORAIRE
+═══════════════════════════════════════════════════════════════
+
+En attendant de résoudre le problème Google OAuth, vous pouvez:
+
+✅ Utiliser l'inscription avec email/mot de passe
+✅ Utiliser la connexion avec email/mot de passe
+
+Ces fonctionnalités fonctionnent parfaitement sans Google OAuth.
+
+═══════════════════════════════════════════════════════════════
+📞 AIDE SUPPLÉMENTAIRE
+═══════════════════════════════════════════════════════════════
+
+Pour plus d'aide:
+→ Exécutez: RESOUDRE_GOOGLE_ERREUR.bat
+→ Ou: VERIFIER_ET_CONFIGURER_GOOGLE.bat
+→ Consultez: INSTRUCTIONS_GOOGLE_SIMPLE.txt
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

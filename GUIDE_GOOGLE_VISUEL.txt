@@ -1,0 +1,116 @@
+╔════════════════════════════════════════════════════════════════╗
+║   GUIDE VISUEL - CONFIGURATION GOOGLE OAUTH                   ║
+╚════════════════════════════════════════════════════════════════╝
+
+📋 ETAPES DETAILLEES AVEC IMAGES
+═══════════════════════════════════════════════════════════════
+
+ETAPE 1: CREER UN PROJET GOOGLE CLOUD
+──────────────────────────────────────
+1. Ouvrez: https://console.cloud.google.com/
+2. Connectez-vous avec votre compte Google
+3. En haut à droite, cliquez sur le nom du projet actuel
+4. Cliquez sur "NOUVEAU PROJET"
+5. Nom: CB_Community
+6. Cliquez sur "CRÉER"
+7. Attendez que le projet soit créé (quelques secondes)
+
+ETAPE 2: ACTIVER L'API GOOGLE IDENTITY
+────────────────────────────────────────
+1. Dans le menu de gauche (☰), cliquez sur "APIs et services"
+2. Cliquez sur "Bibliothèque"
+3. Dans la barre de recherche, tapez: "Google Identity"
+4. Cliquez sur "Google Identity Services API"
+5. Cliquez sur le bouton bleu "ACTIVER"
+6. Attendez quelques secondes
+
+ETAPE 3: CREER ID CLIENT OAUTH 2.0
+────────────────────────────────────
+1. Dans le menu de gauche, cliquez sur "Identifiants"
+2. En haut de la page, cliquez sur "+ CRÉER DES IDENTIFIANTS"
+3. Cliquez sur "ID client OAuth"
+4. Remplissez le formulaire:
+   
+   Type d'application: Application Web
+   Nom: CB_Community
+   
+   URIs de redirection autorisées:
+   Cliquez sur "+ AJOUTER UN URI" et ajoutez:
+   
+   http://localhost:3000/api/auth/callback/google
+   http://127.0.0.1:3000/api/auth/callback/google
+   http://VOTRE_IP:3000/api/auth/callback/google
+   
+   (Remplacez VOTRE_IP par votre adresse IP locale)
+
+5. Cliquez sur "CRÉER"
+6. Une fenêtre popup va s'afficher avec:
+   - Votre Client ID (copiez-le)
+   - Votre Client Secret (copiez-le)
+   
+   ⚠️ IMPORTANT: Copiez ces deux valeurs maintenant!
+   Vous ne pourrez plus voir le Client Secret après!
+
+ETAPE 4: CONFIGURER DANS LE SITE
+──────────────────────────────────
+1. Double-cliquez sur: CONFIGURER_GOOGLE_ETAPE_PAR_ETAPE.bat
+2. Suivez les instructions
+3. Collez le Client ID quand demandé
+4. Collez le Client Secret quand demandé
+5. Le script va mettre à jour automatiquement le fichier .env
+
+ETAPE 5: REDEMARRER LE SERVEUR
+────────────────────────────────
+1. Fermez la fenêtre du serveur actuel (Ctrl+C)
+2. Double-cliquez sur: DEMARRER_MAINTENANT.bat
+3. Attendez que le serveur démarre
+4. Les boutons Google apparaîtront automatiquement!
+
+ETAPE 6: TESTER
+───────────────
+1. Allez sur: http://localhost:3000/login
+2. Vous devriez voir le bouton "Continuer avec Google"
+3. Cliquez dessus
+4. Google va afficher tous vos comptes Google
+5. Choisissez le compte que vous voulez utiliser
+6. Autorisez l'application
+7. Vous serez connecté automatiquement!
+
+═══════════════════════════════════════════════════════════════
+📝 NOTES IMPORTANTES
+═══════════════════════════════════════════════════════════════
+
+✅ URLs de redirection à ajouter dans Google Console:
+   - http://localhost:3000/api/auth/callback/google
+   - http://127.0.0.1:3000/api/auth/callback/google
+   - http://VOTRE_IP_LOCALE:3000/api/auth/callback/google
+   - http://VOTRE_IP_PUBLIQUE:3000/api/auth/callback/google (si hébergé)
+
+✅ Le Client Secret ne peut être vu qu'une seule fois!
+   Copiez-le immédiatement et gardez-le dans un endroit sûr.
+
+✅ Après configuration, redémarrez toujours le serveur
+   pour que les changements prennent effet.
+
+✅ Si vous changez d'IP ou de domaine, mettez à jour
+   les URLs de redirection dans Google Console.
+
+═══════════════════════════════════════════════════════════════
+🔧 DEPANNAGE
+═══════════════════════════════════════════════════════════════
+
+Problème: "redirect_uri_mismatch"
+Solution: Vérifiez que toutes les URLs de redirection sont
+          ajoutées dans Google Console
+
+Problème: "invalid_client"
+Solution: Vérifiez que Client ID et Secret sont corrects
+          dans le fichier .env
+
+Problème: Boutons Google n'apparaissent pas
+Solution: Redémarrez le serveur après configuration
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+

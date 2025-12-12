@@ -1,0 +1,74 @@
+╔════════════════════════════════════════════════════════════════╗
+║   CB_COMMUNITY - ENSTRUKSYON POU REZOUD PWOBLEM EMAIL          ║
+╚════════════════════════════════════════════════════════════════╝
+
+PWOBLEM: Itilizatè pa jwenn mesaj imel e yo pa ka konekte
+═══════════════════════════════════════════════════════════════
+
+SOLISYON 1: Wè baz de done a
+─────────────────────────────
+1. Double-cliquez sou: OUVRIR_BD.bat
+2. Prisma Studio ap ouvri nan navigatè a
+3. Ou ka wè tout itilizatè yo nan tab "User"
+4. Ou ka modifye itilizatè yo dirèkteman
+
+SOLISYON 2: Kreye yon admin (POU TESTE)
+─────────────────────────────────────────
+1. Double-cliquez sou: CREER_ADMIN.bat
+2. Antre email ak modpas
+3. Yon admin ap kreye ki ka konekte imedyatman
+
+SOLISYON 3: Aktive itilizatè ki deja egziste
+──────────────────────────────────────────────
+1. Double-cliquez sou: GERE_UTILISATEURS.bat
+2. Chwazi opsyon 3
+3. Antre email itilizatè a
+4. Itilizatè a ap aktive (pa bezwen verifye imel)
+
+SOLISYON 4: Konfigire SMTP pou voye imel
+──────────────────────────────────────────
+1. Ale sou: https://myaccount.google.com/security
+2. Aktive "Validation an 2 etap" si se pa deja fè
+3. Ale nan "Mots de passe des applications"
+4. Kreye yon nouvo "Mot de passe d'application" pou "Mail"
+5. Kopye modpas la (16 karaktè)
+6. Double-cliquez sou: RESOUDRE_EMAIL.bat
+7. Chwazi opsyon 1
+8. Kolye modpas la
+
+SOLISYON 5: Dezakte verifye imel (TEMPORÈ)
+────────────────────────────────────────────
+1. Mwen deja modifye kòd la pou dezakte verifye imel
+2. Redemare sèvè a pou chanjman yo pran efè
+3. Itilizatè yo ka konekte san verifye imel
+
+POU WÈ BAZ DE DONE:
+───────────────────
+Double-cliquez sou: OUVRIR_BD.bat
+- Prisma Studio ap ouvri nan http://localhost:5555
+- Ou ka wè ak modifye tout done yo
+
+POU KREYE YON ADMIN:
+───────────────────
+Double-cliquez sou: CREER_ADMIN.bat
+- Antre email ak modpas
+- Yon admin ap kreye ki ka konekte imedyatman
+
+POU JERE ITILIZATÈ:
+───────────────────
+Double-cliquez sou: GERE_UTILISATEURS.bat
+- Wè tout itilizatè yo
+- Kreye nouvo itilizatè
+- Aktive itilizatè ki deja egziste
+
+POU REDEMARE SÈVÈ A:
+─────────────────────
+1. Fèmen fenèt sèvè a (Ctrl+C)
+2. Double-cliquez sou: DEMARRER_MAINTENANT.bat
+3. Tann pou sèvè a demare
+4. Ale sou: http://localhost:3000
+
+═══════════════════════════════════════════════════════════════
+© 2024 CB_Community
+═══════════════════════════════════════════════════════════════
+
