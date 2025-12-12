@@ -1,8 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useSession } from 'next-auth/react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   LayoutDashboard,
@@ -44,16 +45,57 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
+  const { data: session, status } = useSession();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
+  const [userData, setUserData] = useState<{
+    nom: string;
+    prenom: string;
+    email: string;
+    plan: string;
+    photo: string | null;
+  } | null>(null);
 
-  // Mock user data - replace with actual session data
-  const user = {
-    nom: 'Pluviose',
-    prenom: 'Wadlex',
-    email: 'wadlex@cbcommunity.com',
-    plan: 'VIP',
-    photo: null,
+  // Fetch user data from database
+  useEffect(() => {
+    if (status === 'authenticated' && session?.user?.id) {
+      fetch('/api/user/me')
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.user) {
+            setUserData({
+              nom: data.user.nom || '',
+              prenom: data.user.prenom || 'Utilisateur',
+              email: data.user.email || '',
+              plan: data.user.plan || 'BASIC',
+              photo: data.user.photo || null,
+            });
+          }
+        })
+        .catch(() => {
+          // Fallback to session data
+          const userName = session?.user?.name || '';
+          const nameParts = userName.split(' ');
+          setUserData({
+            nom: nameParts.length > 1 ? nameParts.slice(1).join(' ') : '',
+            prenom: nameParts[0] || 'Utilisateur',
+            email: session?.user?.email || '',
+            plan: (session?.user as any)?.plan || 'BASIC',
+            photo: session?.user?.image || null,
+          });
+        });
+    }
+  }, [session, status]);
+
+  // Get user data from state or fallback to session
+  const userName = session?.user?.name || '';
+  const nameParts = userName.split(' ');
+  const user = userData || {
+    nom: nameParts.length > 1 ? nameParts.slice(1).join(' ') : '',
+    prenom: nameParts[0] || 'Utilisateur',
+    email: session?.user?.email || '',
+    plan: (session?.user as any)?.plan || 'BASIC',
+    photo: session?.user?.image || null,
   };
 
   const isActive = (href: string) => {

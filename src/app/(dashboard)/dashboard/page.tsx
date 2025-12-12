@@ -1,7 +1,9 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { useSession } from 'next-auth/react';
 import {
   BookOpen,
   TrendingUp,
@@ -99,10 +101,36 @@ const notifications = [
 ];
 
 export default function DashboardPage() {
-  // Mock user data
-  const user = {
-    prenom: 'Wadlex',
-    plan: 'VIP',
+  const { data: session, status } = useSession();
+  const [userData, setUserData] = useState<{ prenom: string; plan: string } | null>(null);
+
+  // Fetch user data from database
+  useEffect(() => {
+    if (status === 'authenticated' && session?.user?.id) {
+      fetch('/api/user/me')
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.user) {
+            setUserData({
+              prenom: data.user.prenom || data.user.name?.split(' ')[0] || 'Utilisateur',
+              plan: data.user.plan || 'BASIC',
+            });
+          }
+        })
+        .catch(() => {
+          // Fallback to session data
+          const nameParts = session?.user?.name?.split(' ') || [];
+          setUserData({
+            prenom: nameParts[0] || 'Utilisateur',
+            plan: (session?.user as any)?.plan || 'BASIC',
+          });
+        });
+    }
+  }, [session, status]);
+
+  const user = userData || {
+    prenom: session?.user?.name?.split(' ')[0] || 'Utilisateur',
+    plan: (session?.user as any)?.plan || 'BASIC',
   };
 
   return (
